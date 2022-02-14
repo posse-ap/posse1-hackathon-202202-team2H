@@ -22,7 +22,10 @@ li{
   margin: 40px 0;
 }
 
-
+.result-section{
+    width: 80%;
+    margin: 10px auto;
+}
 /* end od common */
 /* header */
 .header_container{
@@ -115,9 +118,7 @@ margin: 0 auto;
 /* result-stmt */
 .result-stmt {
     text-align: center;
-    width: 80%;
     outline: 2px solid skyblue;
-    margin: 0 auto;
 }
 .result-stmt p {
     padding: 10px 0;
@@ -132,8 +133,6 @@ margin: 0 auto;
 .result-desc {
     outline:var(--main-outline);
     padding: 10px 0;
-    width: 80%;
-    margin: 0 auto;
 }
  /* end of result-desc */
 
