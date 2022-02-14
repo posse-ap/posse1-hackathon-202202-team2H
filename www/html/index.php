@@ -12,7 +12,11 @@ question: <?= getQuestion($db, 1) ?><br>
 choices: <?php var_dump(getChoices($db, 1)) ?>
 
 <?php foreach($questions as $question): ?>
-    
+    <h1><?= $question['title'] ?></h1>
+    <?php $choices = getChoices($db, $question['id']) ?>
+    <?php foreach($choices as $choice): ?>
+        <p><?= $choice['choice_text'] ?></p>
+    <?php endforeach; ?>
 <?php endforeach; ?>
 
 </main>
