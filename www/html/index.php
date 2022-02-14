@@ -5,12 +5,13 @@ require_once dirname(__FILE__) . '/dbconnect.php';
 require_once dirname(__FILE__) . '/question.php';
 include dirname(__FILE__) . '/header.php';
 
-
 createToken();
 
 // execute validation
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     validate();
+    $total = sumInputScore();
+    print($total);
 }
 
 $questions = getAllQuestions($db);
@@ -26,10 +27,11 @@ choices: <?php var_dump(getChoices($db, 1)) ?>
     <h1><?= $question['title'] ?></h1>
     <?php $choices = getChoices($db, $question['id']) ?>
     <?php foreach($choices as $choice): ?>
-        <input type="radio" name="answers[]" value="<?= $choice['score'] ?>">
+        <input type="radio" name="answers[<?= $question['id'] ?>]" value="<?= $choice['score'] ?>">
         <p><?= $choice['choice_text'] ?></p>
     <?php endforeach; ?>
 <?php endforeach; ?>
+<input type="submit" value="submit">
 </form>
 </main>
 
