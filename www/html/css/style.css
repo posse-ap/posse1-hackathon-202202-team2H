@@ -25,6 +25,7 @@ li{
 .result-section{
     width: 80%;
     margin: 10px auto;
+    outline: 2px solid skyblue;
 }
 /* end od common */
 /* header */
@@ -118,7 +119,6 @@ margin: 0 auto;
 /* result-stmt */
 .result-stmt {
     text-align: center;
-    outline: 2px solid skyblue;
 }
 .result-stmt p {
     padding: 10px 0;
@@ -131,7 +131,6 @@ margin: 0 auto;
 
 /* result-desc */
 .result-desc {
-    outline:var(--main-outline);
     padding: 10px 0;
 }
  /* end of result-desc */
