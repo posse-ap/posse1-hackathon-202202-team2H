@@ -1,23 +1,94 @@
 /* common */
+:root{
+  --main-outline:2px solid red; 
+}
+body{
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
 
+}
+a{
+
+}
+li{
+  list-style: none;
+
+}
+.section{
+  margin: 40px 0;
+}
 
 
 /* end od common */
 /* header */
+.header_container{
+text-align: center;
+margin-top: 24px;
+outline:var(--main-outline)
+
+}
+.header_container img{
+  width: 100px;
+  height: auto;
+}
+.header_container p{
+  margin-top: 8px;
+}
 
 /*  end of header */
 /* footer */
-
+footer{
+    text-align: center;
+    background: #F5F5F7;
+    padding: 40px;
+    color: #939397;
+}
+.footer_line{
+    width: 100%;
+    height: 1px;
+    background: #939397;
+    margin: 10px 0;
+}
 /* end of footer */
 
 
 /* top_page */
-
-
 /* first_view & diag_desc*/
+.first_view{
+  background: url(../../html/img/S__19587094.jpg);
+  background-size: cover;
+  height: 50vh;
+  border-radius: 10px;
+}
+/* .first_view h1{
+  position: absolute;
+  top: 100px;
+} */
 
 /* end of first_view & diag_deac*/
 /* question */
+.question{
+  outline:var(--main-outline);
+padding: 40px;
+}
+.question_stmt p{
+  font-size: 1.2rem;
+}
+.question ul{
+  padding: 0;
+}
+.question ul li{
+  outline:var(--main-outline);
+height: 50px;
+line-height: 50px;
+width: 400px;
+margin: 0 auto;
+
+}
+.question ul li + li{
+  margin-top: 40px;
+}
 
 /* end of question */
 /* name */
@@ -31,6 +102,37 @@
 
 
 /* result_page */
+
+/* .result-container */
+.result-container{
+    outline: 2px solid red;
+}
+/* end of .result-container */
+
+/* result-stmt */
+
+/* end of result-stmt */
+
+/* result-desc */
+
+ /* end of result-desc */
+
+ /* share-buttons */
+
+ /* end of share-buttons */
+
+ /* case-desc */
+
+ /* end of case-desc */
+
+ /* posse-desc  */
+
+ /* end of posse-desc */
+
+ /* official */
+
+ /* end of official */
+
 
 
 
