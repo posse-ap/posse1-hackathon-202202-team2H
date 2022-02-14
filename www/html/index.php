@@ -1,5 +1,8 @@
 <!-- headerの読み込み -->
-<?php include dirname(__FILE__) . '/header.php' ?>
+<?php
+require_once dirname(__FILE__) . '/dbconnect.php';
+include dirname(__FILE__) . '/header.php';
+?>
 
 <main>
 
