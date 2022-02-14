@@ -73,7 +73,6 @@ height: 50px;
 line-height: 50px;
 width: 400px;
 margin: 0 auto;
-
 }
 .question ul li + li{
   margin-top: 40px;
@@ -81,7 +80,40 @@ margin: 0 auto;
 
 /* end of question */
 /* name */
-
+.name {
+	position: relative;
+	margin: 0 auto;
+}
+.name p{
+  line-height: 16px;
+}
+.name input[type=text] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+.name input[type=text]:focus {
+	border-color: #da3c41;
+}
+.name input[type=text] {
+	padding-left: 40px;
+}
+.name i {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+.name input[type=text]:focus + i {
+	color: #da3c41;
+}
 /*  end of name */
 /* sumbit */
 
