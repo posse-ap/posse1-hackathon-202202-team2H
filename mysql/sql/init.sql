@@ -8,8 +8,13 @@ CREATE TABLE choices (
 
 CREATE TABLE questions (
     id INT PRIMARY KEY AUTO_INCREMENT,
+    title TEXT NOT NULL,
+    category_id INT NOT NULL,
+    FOREIGN KEY (category_id) REFERENCES categories(category_id) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
+
+CREATE TABLE categories (
+    category_id INT PRIMARY KEY AUTO_INCREMENT,
     title TEXT NOT NULL
 );
 
-
-insert into questions ()
