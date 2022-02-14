@@ -1,11 +1,42 @@
 /* common */
 p {
     margin: 0;
+:root{
+  --main-outline:2px solid red; 
+}
+body{
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+
+}
+a{
+
+}
+li{
+  list-style: none;
+
+}
+.section{
+  margin: 40px 0;
 }
 
 
 /* end od common */
 /* header */
+.header_container{
+text-align: center;
+margin-top: 24px;
+outline:var(--main-outline)
+
+}
+.header_container img{
+  width: 100px;
+  height: auto;
+}
+.header_container p{
+  margin-top: 8px;
+}
 
 /*  end of header */
 /* footer */
@@ -25,12 +56,41 @@ footer{
 
 
 /* top_page */
-
-
 /* first_view & diag_desc*/
+.first_view{
+  background: url(../../html/img/S__19587094.jpg);
+  background-size: cover;
+  height: 50vh;
+  border-radius: 10px;
+}
+/* .first_view h1{
+  position: absolute;
+  top: 100px;
+} */
 
 /* end of first_view & diag_deac*/
 /* question */
+.question{
+  outline:var(--main-outline);
+padding: 40px;
+}
+.question_stmt p{
+  font-size: 1.2rem;
+}
+.question ul{
+  padding: 0;
+}
+.question ul li{
+  outline:var(--main-outline);
+height: 50px;
+line-height: 50px;
+width: 400px;
+margin: 0 auto;
+
+}
+.question ul li + li{
+  margin-top: 40px;
+}
 
 /* end of question */
 /* name */
