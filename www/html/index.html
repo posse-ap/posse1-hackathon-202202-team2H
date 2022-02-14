@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>posse診断ページ</title>
   <link rel="stylesheet" href="../html/css/reset.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="../html/css/style.css">
 </head>
 
@@ -29,21 +31,35 @@
       <p>この診断は〇〇です。</p>
       <p>この診断は〇〇です。</p>
     </div>
-    <div class="question">
+    <div class="question section">
       <div class="question_stmt">
         <p>あなたは人が好きですか？</p>
       </div>
       <ul>
-        <li>はい</li>
-        <li>いいえ</li>
+        <label for="answer_yes">
+          <li><input type="radio" name="yes" id="answer_yes">はい</li>
+        </label>
+        <label for="answer_no">
+          <li><input type="radio" name="no" id="answer_no">いいえ</li>
+        </label>
       </ul>
     </div>
+    <!-- <div class="name section">
+      <p>ニックネーム</p>
+      <input type="text" placeholder="ニックネーム" id = 'name' >
+      <i class="fa-solid fa-user"></i>
+    </div> -->
     <div class="name section">
-      <p>名前を記入</p>
-      <input type="text">
+      <p>ニックネーム</p>
+      <input type="text" placeholder="ニックネーム" id = 'name'>
+      <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
     </div>
-    <div class="submit section">
-      <button>診断する</button>
+    <!-- <div class="submit section">
+     <input type="submit" value="診断する" class="btn btn-radius-gradient">
+    </div> -->
+    <div class="btn-radius-gradient-wrap submit section">
+      <!-- <a href="" class="btn btn-radius-gradient">PUSH！</a> -->
+      <input type="submit" value="診断する" class="btn btn-radius-gradient">
     </div>
   </div>
   <!-- end of top -->

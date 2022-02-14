@@ -4,16 +4,23 @@ p {
 }
 :root{
   --main-outline:2px solid red; 
+  --button-firstColor:#f2f5f6;
+  --button-secondColor:#e3eaed;
+  --button-thirdColor:#96a1a5;
 }
 body{
   margin: 0 auto;
   width: 80%;
   text-align: center;
-
 }
-a{
-
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
+/* a{
+
+} */
 li{
   list-style: none;
 
@@ -90,7 +97,6 @@ height: 50px;
 line-height: 50px;
 width: 400px;
 margin: 0 auto;
-
 }
 .question ul li + li{
   margin-top: 40px;
@@ -98,9 +104,139 @@ margin: 0 auto;
 
 /* end of question */
 /* name */
-
+.name {
+	position: relative;
+	margin: 0 auto;
+}
+.name p{
+  line-height: 16px;
+}
+.name input[type=text] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+.name input[type=text]:focus {
+	border-color: #da3c41;
+}
+.name input[type=text] {
+	padding-left: 40px;
+}
+/* 参考サイト https://copypet.jp/692/ */
+.name i {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+.name input[type=text]:focus + i {
+	color: #da3c41;
+}
 /*  end of name */
 /* sumbit */
+
+/* .submit button{
+  color: white;
+  padding: 8px 100px;
+  background-color: wheat;
+  
+} */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+
+/* 背景用*/
+.btn,
+input.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.btn-radius-gradient-wrap {
+  display: inline-block;
+
+  padding: 0.5rem;
+
+  border-radius: 100vh;
+  /* background: #f2f5f6; */
+  background: var(--button-firstColor);
+  background: -webkit-linear-gradient(
+    to top,
+    var(--button-firstColor) 0%,
+     var(--button-secondColor) 37%,
+     var(--button-thirdColor) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--button-firstColor)),
+    color-stop(37%, var(--button-secondColor)),
+    to(var(--button-thirdColor))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    var(--button-firstColor) 0%,
+    var(--button-secondColor) 37%,
+    var(--button-thirdColor) 100%
+  );
+  background: linear-gradient(to bottom, var(--button-firstColor) 0%, var(--button-secondColor) 37%, var(--button-thirdColor) 100%);
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--button-firstColor)', endColorstr='var(--button-thirdColor)', GradientType=0);
+}
+
+input.btn-radius-gradient {
+  border-radius: 100vh;
+  background: var(--button-secondColor);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--button-secondColor)),
+    to(var(--button-firstColor))
+  );
+  background: -webkit-linear-gradient(top, var(--button-secondColor) 0%, var(--button-firstColor) 100%);
+  background: linear-gradient(to bottom, var(--button-secondColor) 0%, var(--button-firstColor)100%);
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--button-secondColor)', endColorstr='var(--button-firstColor)', GradientType=0);
+}
+
+input.btn-radius-gradient:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
 
 /* end of sumbit */
 
