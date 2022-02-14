@@ -31,6 +31,15 @@ function sumInputScore() {
     return $result;
 }
 
+
+function getMaxChoice($db, $question_id) {
+    $stmt = $db->prepare("SELECT MAX(score) FROM choices WHERE question_id=:question_id");
+    $stmt->bindValue(':question_id', $question_id);
+    $stmt->execute();
+    $max = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $max['MAX(score)'];
+}
+
 // Token
 function createToken() {
     if (!isset($_SESSION['token'])) {
