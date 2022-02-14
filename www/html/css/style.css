@@ -2,6 +2,16 @@
 body{
   margin: 0 auto;
   width: 80%;
+  text-align: center;
+}
+a{
+
+}
+li{
+  list-style: none;
+}
+.section{
+  margin: 40px 0;
 }
 
 
@@ -10,6 +20,7 @@ body{
 .header_container{
 text-align: center;
 margin-top: 24px;
+
 }
 .header_container img{
   width: 100px;
@@ -26,12 +37,26 @@ margin-top: 24px;
 
 
 /* top_page */
-
-
 /* first_view & diag_desc*/
+.first_view{
+  background: url(../../html/img/S__19587094.jpg);
+  background-size: cover;
+  height: 50vh;
+  border-radius: 10px;
+}
+/* .first_view h1{
+  position: absolute;
+  top: 100px;
+} */
 
 /* end of first_view & diag_deac*/
 /* question */
+.question_stmt p{
+  font-size: 1.2rem;
+}
+.question ul li{
+outline: 2px solid red;
+}
 
 /* end of question */
 /* name */
