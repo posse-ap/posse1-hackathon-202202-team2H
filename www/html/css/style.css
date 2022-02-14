@@ -1,6 +1,7 @@
 /* common */
 p {
     margin: 0;
+}
 :root{
   --main-outline:2px solid red; 
 }
@@ -21,7 +22,10 @@ li{
   margin: 40px 0;
 }
 
-
+.result-section{
+    width: 80%;
+    margin: 10px auto;
+}
 /* end od common */
 /* header */
 .header_container{
@@ -108,17 +112,13 @@ margin: 0 auto;
 /* .result-container */
 .result-container{
     outline: 2px solid red;
-
 }
 /* end of .result-container */
 
 /* result-stmt */
 .result-stmt {
     text-align: center;
-    width: 80%;
     outline: 2px solid skyblue;
-    padding: 10px;
-    margin: 0 auto;
 }
 .result-stmt p {
     padding: 10px 0;
@@ -130,7 +130,10 @@ margin: 0 auto;
 /* end of result-stmt */
 
 /* result-desc */
-
+.result-desc {
+    outline:var(--main-outline);
+    padding: 10px 0;
+}
  /* end of result-desc */
 
  /* share-buttons */
