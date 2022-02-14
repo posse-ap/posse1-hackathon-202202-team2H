@@ -1,9 +1,23 @@
 /* common */
-
+body{
+  margin: 0 auto;
+  width: 80%;
+}
 
 
 /* end od common */
 /* header */
+.header_container{
+text-align: center;
+margin-top: 24px;
+}
+.header_container img{
+  width: 100px;
+  height: auto;
+}
+.header_container p{
+  margin-top: 8px;
+}
 
 /*  end of header */
 /* footer */
