@@ -56,13 +56,23 @@ outline:var(--main-outline)
 
 /* end of first_view & diag_deac*/
 /* question */
+.question{
+  outline:var(--main-outline);
+padding: 40px;
+}
 .question_stmt p{
   font-size: 1.2rem;
 }
+.question ul{
+  padding: 0;
+}
 .question ul li{
-outline:var(--main-outline);
+  outline:var(--main-outline);
 height: 50px;
 line-height: 50px;
+width: 400px;
+margin: 0 auto;
+
 }
 .question ul li + li{
   margin-top: 40px;
