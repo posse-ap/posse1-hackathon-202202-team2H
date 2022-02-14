@@ -40,6 +40,15 @@ function getMaxChoice($db, $question_id) {
     return $max['MAX(score)'];
 }
 
+function getMaxScores($db) {
+    $ids = $_REQUEST['ids'];
+    $result = 0;
+    foreach ($ids as $id) {
+        $result += getMaxChoice($db, $id);
+    }
+    return $result;
+}
+
 // Token
 function createToken() {
     if (!isset($_SESSION['token'])) {
