@@ -137,18 +137,21 @@ margin: 0 auto;
 
  /* share-buttons */
 .share-buttons{
-    width: 100%;
+    /* width: 100%; */
 }
 
 .twitter{
     background: #199FF0;
     width: 90%;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .other-buttons{
     display: flex;
     gap: 10px;
     width: 90%;
+    margin: 0 auto;
 }
 .line{
     background: #02C755;
