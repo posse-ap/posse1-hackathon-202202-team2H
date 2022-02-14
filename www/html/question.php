@@ -20,3 +20,25 @@ function getChoices($db, $question_id) {
     $choices = $stmt->fetchAll(PDO::FETCH_ASSOC);
     return $choices;
 }
+
+
+function sumInputScore() {
+    $scores = $_REQUEST['answers'];
+    $result = 0;
+    foreach($scores as $score){
+        $result += $score;
+    }
+    return $result;
+}
+
+function createToken() {
+    if (!isset($_SESSION['token'])) {
+        $_SESSION['token'] = bin2hex(random_bytes(32));
+    }
+}
+
+function validate() {
+    if (empty($_SESSION['token']) || $_SESSION['token'] !== filter_input(INPUT_POST, 'token')) {
+        exit('Invalid post request');
+    }
+}
