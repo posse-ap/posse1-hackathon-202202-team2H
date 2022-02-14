@@ -1,6 +1,7 @@
 /* common */
 p {
     margin: 0;
+}
 :root{
   --main-outline:2px solid red; 
 }
@@ -108,7 +109,6 @@ margin: 0 auto;
 /* .result-container */
 .result-container{
     outline: 2px solid red;
-
 }
 /* end of .result-container */
 
@@ -117,7 +117,6 @@ margin: 0 auto;
     text-align: center;
     width: 80%;
     outline: 2px solid skyblue;
-    padding: 10px;
     margin: 0 auto;
 }
 .result-stmt p {
@@ -130,7 +129,12 @@ margin: 0 auto;
 /* end of result-stmt */
 
 /* result-desc */
-
+.result-desc {
+    outline:var(--main-outline);
+    padding: 10px 0;
+    width: 80%;
+    margin: 0 auto;
+}
  /* end of result-desc */
 
  /* share-buttons */
