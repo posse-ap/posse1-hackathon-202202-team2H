@@ -32,6 +32,7 @@ li{
 .result-section{
     width: 80%;
     margin: 10px auto;
+    outline: 2px solid skyblue;
 }
 /* end od common */
 /* header */
@@ -254,7 +255,6 @@ input.btn-radius-gradient:hover {
 /* result-stmt */
 .result-stmt {
     text-align: center;
-    outline: 2px solid skyblue;
 }
 .result-stmt p {
     padding: 10px 0;
@@ -267,25 +267,27 @@ input.btn-radius-gradient:hover {
 
 /* result-desc */
 .result-desc {
-    outline:var(--main-outline);
     padding: 10px 0;
 }
  /* end of result-desc */
 
  /* share-buttons */
 .share-buttons{
-    width: 100%;
+    /* width: 100%; */
 }
 
 .twitter{
     background: #199FF0;
     width: 90%;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .other-buttons{
     display: flex;
     gap: 10px;
     width: 90%;
+    margin: 0 auto;
 }
 .line{
     background: #02C755;
