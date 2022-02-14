@@ -75,11 +75,12 @@ padding: 40px;
   padding: 0;
 }
 .question ul li{
-  outline:var(--main-outline);
+  /* outline:var(--main-outline); */
 height: 50px;
 line-height: 50px;
 width: 400px;
 margin: 0 auto;
+font-size: 2rem;
 }
 .question ul li + li{
   margin-top: 40px;
@@ -90,9 +91,11 @@ margin: 0 auto;
 .name {
 	position: relative;
 	margin: 0 auto;
+  width: 400px;
 }
 .name p{
   line-height: 16px;
+  font-size: 1.6rem;
 }
 .name input[type=text] {
 	font: 15px/24px sans-serif;
@@ -113,8 +116,8 @@ margin: 0 auto;
 /* 参考サイト https://copypet.jp/692/ */
 .name i {
 	position: absolute;
-	top: 40px;
-	left: 0;
+	top: 34px;
+	left: 8px;
 	padding: 9px 8px;
 	transition: 0.3s;
 	color: #aaaaaa;
@@ -125,22 +128,14 @@ margin: 0 auto;
 /*  end of name */
 /* sumbit */
 
-/* .submit button{
-  color: white;
-  padding: 8px 100px;
-  background-color: wheat;
-  
-} */
-
+/* 診断ボタンのcss */
+/* 参考サイト　https://jajaaan.co.jp/css/button/ */
 *,
 *:before,
 *:after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
-
-
-
 /* 背景用*/
 .btn,
 input.btn,
