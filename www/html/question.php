@@ -31,6 +31,7 @@ function sumInputScore() {
     return $result;
 }
 
+// Token
 function createToken() {
     if (!isset($_SESSION['token'])) {
         $_SESSION['token'] = bin2hex(random_bytes(32));
