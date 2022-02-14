@@ -52,6 +52,18 @@ footer{
 /* end of .result-container */
 
 /* result-stmt */
+.result-stmt {
+    text-align: center;
+    width: 80%;
+    outline: 2px solid skyblue;
+    padding: 10px;
+}
+.result-stmt p {
+    padding: 10px 0;
+}
+.result-stmt span {
+    font-size: 20px;
+}
 
 /* end of result-stmt */
 
