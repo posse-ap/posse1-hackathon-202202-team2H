@@ -24,6 +24,7 @@ services:
     volumes:
       - ./mysql/data:/var/lib/mysql
     environment:
+      MYSQL_DATABASE: diagnose
       MYSQL_ROOT_PASSWORD: password
 
   phpmyadmin:
