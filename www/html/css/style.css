@@ -137,6 +137,36 @@ margin: 0 auto;
  /* end of result-desc */
 
  /* share-buttons */
+.share-buttons{
+    width: 100%;
+}
+
+.twitter{
+    background: #199FF0;
+    width: 90%;
+    margin-bottom: 10px;
+}
+.other-buttons{
+    display: flex;
+    gap: 10px;
+    width: 90%;
+}
+.line{
+    background: #02C755;
+    width: 50%;
+}
+.facebook{
+    background: #1B76F1;
+    width: 50%;
+}
+.twitter,.line,.facebook{
+    border-radius: 12px;
+    text-align: center;
+}
+.share-buttons img{
+    width: 50px;
+    height: 50px;
+}
 
  /* end of share-buttons */
 
