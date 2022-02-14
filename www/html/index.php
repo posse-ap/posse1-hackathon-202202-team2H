@@ -27,7 +27,7 @@ choices: <?php var_dump(getChoices($db, 1)) ?>
     <h1><?= $question['title'] ?></h1>
     <?php $choices = getChoices($db, $question['id']) ?>
     <?php foreach($choices as $choice): ?>
-        <input type="radio" name="answers[]" value="<?= $choice['score'] ?>">
+        <input type="radio" name="answers[<?= $question['id'] ?>]" value="<?= $choice['score'] ?>">
         <p><?= $choice['choice_text'] ?></p>
     <?php endforeach; ?>
 <?php endforeach; ?>
