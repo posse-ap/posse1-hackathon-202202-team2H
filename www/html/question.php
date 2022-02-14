@@ -49,6 +49,10 @@ function getMaxScores($db) {
     return $result;
 }
 
+function getPercentage($db) {
+    return round(sumInputScore() / getMaxScores($db) * 100);
+}
+
 // Token
 function createToken() {
     if (!isset($_SESSION['token'])) {

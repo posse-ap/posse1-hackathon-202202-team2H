@@ -10,8 +10,7 @@ createToken();
 // execute validation
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     validate();
-    $total = sumInputScore();
-    print($total);
+    print(getPercentage($db));
 }
 
 $questions = getAllQuestions($db);
