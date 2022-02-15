@@ -62,12 +62,12 @@ include dirname(__FILE__) . '/header.php';
     <section class="official result_section">
         <a href="https://posse-ap.com/">
             <button>
-                <div>
+                <div class="link_button">
                     <img class="logo-pic" src="img/posseLogo.png" alt="posseロゴ">
                     <p>プログラミング学習コミュニティ</p>
                 </div>
-                <i class="bi bi-arrow-right-circle"></i>
-                <img class="official-pic" src="img/posselink.jpg" alt="posse画像">
+                <!-- <i class="bi bi-arrow-right-circle"></i> -->
+                <!-- <img class="official-pic" src="img/posselink.jpg" alt="posse画像"> -->
             </button>
         </a>
     </section>
