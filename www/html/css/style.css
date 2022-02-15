@@ -415,13 +415,14 @@ font-size: 2rem;
 	width: 90%;
 	margin: 0 auto;
 }
+.other_buttons a{
+	width: 50%;
+}
 .line {
 	background: #3D783B;
-	width: 50%;
 }
 .facebook {
 	background: #5257A4;
-	width: 50%;
 }
 .twitter,
 .line,
