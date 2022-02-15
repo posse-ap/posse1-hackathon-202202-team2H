@@ -1,3 +1,6 @@
+use mysql;
+alter user 'root'@'%' identified with mysql_native_password by 'password';
+
 DROP DATABASE IF EXISTS diagnose;
 CREATE DATABASE diagnose;
 USE diagnose;
