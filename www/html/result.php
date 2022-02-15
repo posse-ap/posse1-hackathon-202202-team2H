@@ -4,6 +4,12 @@ include dirname(__FILE__) . '/header.php';
 ?>
 
 <div class="result_container">
+    <!-- modal  -->
+    <div class="my_mask my_hidden"  id="mask"></div>
+    <section class="my_modal my_hidden" id="modal">
+        <p>モーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルです</p>
+    </section>
+    <!-- end of modal  -->
 
     <!-- result_stmt -->
  <div class="d-flex">
