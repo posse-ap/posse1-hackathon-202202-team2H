@@ -87,7 +87,7 @@ include dirname(__FILE__) . '/header.php';
     <!-- end of share_buttons -->
 
     <!-- case_desc -->
-    <section class="case_desc result_section">
+    <section class="case_desc result_section box fadeIn">
      <div class="case_desc_title">
       <p>信頼できる人脈で
           <br>新たな自分へと...
@@ -112,7 +112,7 @@ include dirname(__FILE__) . '/header.php';
     <!-- end of case_desc -->
 
     <!-- posse_desc  -->
-    <section class="posse_desc result_section_little">
+    <section class="posse_desc result_section_little box fadeIn">
         <div class="invitation">
           <p>プログラミング学習コミュニティPOSSEでは一緒にプログラミングをする仲間を募集しています。</p>
         </div>
