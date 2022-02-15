@@ -23,7 +23,7 @@ include dirname(__FILE__) . '/header.php';
     <!-- share_buttons -->
     <div class="share_buttons result_section">
         <div class="twitter">
-            <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=大学生 意識高い度:<?= $_SESSION['result'] ?>&related=@posse_program"
+            <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=<?= $_SESSION['nickname'] ?>さんの意識高い度:<?= $_SESSION['result'] ?>&related=@posse_program"
                 target="_blank" data-text="バズブログです！よろしく" data-show-count="false">
                 <img src="img/twitter.jpg" alt="ツイッターのロゴ">
             </a>
