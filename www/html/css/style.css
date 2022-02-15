@@ -9,8 +9,6 @@ p {
   --button-thirdColor:#96a1a5;
 }
 body{
-  margin: 0 auto;
-  width: 80%;
   text-align: center;
 }
 html {
@@ -69,6 +67,10 @@ footer{
 
 
 /* top_page */
+.top_container{
+    width: 80%;
+    margin: 0 auto;
+}
 /* first_view & diag_desc*/
 .first_view{
   background: url(../../html/img/S__19587094.jpg);
