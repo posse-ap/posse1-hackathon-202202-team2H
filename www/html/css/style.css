@@ -29,7 +29,7 @@ li{
 
 .result-section{
     width: 80%;
-    margin: 10px auto;
+    margin: 15px auto;
     outline: 2px solid skyblue;
 }
 /* end od common */
@@ -252,6 +252,7 @@ input.btn-radius-gradient:hover {
 /* .result-container */
 .result-container{
     outline: 2px solid red;
+    font-size: 1.5em;
 }
 /* end of .result-container */
 
@@ -261,6 +262,7 @@ input.btn-radius-gradient:hover {
 }
 .result-stmt p {
     padding: 10px 0;
+    font-size: 1.4em;
 }
 .result-stmt span {
     font-size: 20px;
@@ -271,6 +273,7 @@ input.btn-radius-gradient:hover {
 /* result-desc */
 .result-desc {
     padding: 10px 0;
+    font-size: 1.2em;
 }
  /* end of result-desc */
 
