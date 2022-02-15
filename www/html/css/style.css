@@ -376,6 +376,18 @@ input.btn-radius-gradient:hover {
 /* end of case_desc */
 
 /* posse_desc  */
+.posse_desc {
+    flex-direction: column;
+}
+.posse_desc p {
+    width: 60%;
+    text-align: left;
+    padding: 20px 5%;
+}
+.invitation {
+    text-align-last: left;
+    font-size: 25px;
+}
 
 /* end of posse_desc */
 
