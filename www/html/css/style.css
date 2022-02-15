@@ -313,7 +313,7 @@ input.btn-radius-gradient:hover {
 	text-align: center;
 }
 .result_stmt p {
-	padding: 10px 0;
+	padding: 10px 10%;
     text-align: left;
 }
 .persent {
@@ -326,9 +326,11 @@ input.btn-radius-gradient:hover {
 .result_desc {
 	padding: 10px 0;
     vertical-align: middle;
+    /* margin: auto 0; */
 }
 .result_desc p {
     text-align: right;
+    padding: 10px 10%;
 }
 /* end of result_desc */
 
