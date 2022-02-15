@@ -1,19 +1,23 @@
 /* common */
 p {
 	margin: 0;
+	color: white;
 }
 :root {
 	--main-outline: 2px solid red;
 	--button-firstColor: #f2f5f6;
 	--button-secondColor: #e3eaed;
 	--button-thirdColor: #96a1a5;
+	--main-toppage-color:#171617;
 }
 body {
 	text-align: center;
 color: #e6eced;
-  background: #003c47;
+  /* background: #003c47; */
   margin: 0;
 }
+
+
 html {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -30,18 +34,58 @@ li {
 }
 
 /* end od common */
+
+/* modal */
+.my_mask{
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.my_mask.my_hidden{
+    display: none;
+}
+.my_modal{
+    background: #f5f5f7;
+	color: #000;
+    width: 70%;
+	height: 70%;
+    padding: 20px;
+    border-radius: 4px;
+    position: absolute;
+	position: fixed;
+    top: 50%;
+	transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    transition: transform 0.2s;
+    z-index: 2;
+}
+.my_modal.my_hidden{
+    transform: translate(0,-5000px);
+}
+/* end of modal  */
+
 /* header */
 .header_container {
 	text-align: center;
-	margin-top: 24px;
-	outline: var(--main-outline);
+	/* outline: var(--main-outline); */
+	padding-top: 8px;
+	background-color: var(--main-toppage-color);
 }
 .header_container img {
 	width: 100px;
 	height: auto;
+	filter: brightness(130%) saturate(230%);
 }
 .header_container p {
 	margin-top: 8px;
+	padding-bottom: 8px;
 }
 
 /*  end of header */
@@ -62,10 +106,9 @@ footer {
 /* end of footer */
 
 /* top_page */
-/* .top_container {
-	width: 80%;
-	margin: 0 auto;
-} */
+.top_container {
+	background-color: var(--main-toppage-color);
+}
 /* first_view & diag_desc*/
 .first_view {
 	background: url(../img/shaking-hands-gd698e3efb_1920.jpg);
@@ -77,6 +120,7 @@ footer {
   width: 100%;
   position: relative;
   color: #000;
+	
 }
 .first_view::after {
 	content: '';
@@ -85,7 +129,7 @@ footer {
 	left: 0;
 	width: 100%;
 	height: 80vh;
-	background-image: linear-gradient(180deg, transparent 0 70%, #FFF 100%);
+	background-image: linear-gradient(180deg, transparent 0 60%, #FFF 100%);
 }
 
 .first_view h1{
@@ -99,25 +143,31 @@ margin: 0;;
 }
 .diag_desc{
 	display: flex;
-	width: 80%;
+	width: 85%;
 	margin: 40px auto;
 }
 .diag_desc p{
 text-align: left;
 }
 .diag_deac_title{
-	/* outline: var(--main-outline); */
-	margin-right: 20%;
+	width: 40%;
+}
+.diag_deac_title p{
+	font-size: 1.6rem;
+	letter-spacing: .2rem;
+	line-height: 2.4rem;
 }
 .diag_deac_detail{
 	/* outline: var(--main-outline); */
 	text-align: left;
+	width: 60%;
 }
 .diag_deac_detail p{
-	font-size: .6rem;
+	font-size: 1.2rem;
 	transform: scale(0.8);
-transform-origin:0 0;
-line-height: 1.4rem;
+/* transform-origin:0 0; */
+line-height: 2.2rem;
+letter-spacing: .2rem;
 }
 
 
@@ -125,7 +175,7 @@ line-height: 1.4rem;
 /* question */
 .question {
 	/* outline: var(--main-outline); */
-	padding: 40px;
+	padding: 32px;
 	display: flex;
 	align-items: center;
 	transition: .3s ease;
@@ -145,8 +195,9 @@ line-height: 1.4rem;
 }
 
 .question_stmt p {
-	font-size: 1.2rem;
+	/* font-size: 1.2rem; */
 	text-align: left;
+
 }
 .question ul {
 	padding: 0;
@@ -186,25 +237,26 @@ line-height: 1.4rem;
 .name {
 	position: relative;
 	width: 50%;
-	margin: 80px auto 40px;
+	margin: 40px auto;
 }
 .name p {
 	line-height: 16px;
 	font-size: 1.6rem;
 	padding-bottom: 16px;
+	text-align: left;
 }
 .name input[type="text"] {
 	font: 15px/24px sans-serif;
 	box-sizing: border-box;
 	width: 100%;
-	padding: 0.3em;
-	transition: 0.3s;
+	/* padding: 0.3em; */
+	transition: 0.5s;
 	border: 1px solid #1b2538;
 	border-radius: 4px;
 	outline: none;
 }
 .name input[type="text"]:focus {
-	border-color: #da3c41;
+	border-color: rgba(6, 6, 167, 0.8);
 }
 .name input[type="text"] {
 	padding-left: 40px;
@@ -212,117 +264,84 @@ line-height: 1.4rem;
 /* 参考サイト https://copypet.jp/692/ */
 .name i {
 	position: absolute;
-	top: 40px;
+	top: 36px;
 	left: 8px;
 	padding: 9px 8px;
 	transition: 0.3s;
 	color: #aaaaaa;
 }
 .name input[type="text"]:focus + i {
-	color: #da3c41;
+	color: rgba(6, 6, 167, 0.8);
 }
 /*  end of name */
 /* sumbit */
+/* .submit p{
+
+} */
 
 /* 診断ボタンのcss */
 /* 参考サイト　https://jajaaan.co.jp/css/button/ */
-*,
-*:before,
-*:after {
-	-webkit-box-sizing: inherit;
-	box-sizing: inherit;
+
+.submit p{
+margin: 8px 0;
+font-size: 2rem;
+
 }
-/* 背景用*/
-.btn,
-input.btn,
-button.btn {
-	font-size: 1.6rem;
-	font-weight: 700;
-	line-height: 1.5;
-	position: relative;
-	display: inline-block;
-	padding: 1rem 4rem;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-	text-align: center;
-	vertical-align: middle;
-	text-decoration: none;
-	letter-spacing: 0.1em;
-	color: #212529;
-	border-radius: 0.5rem;
+.submit input{
+	margin-bottom: 40px;
+}
+/* .diag_btn input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1em 2em;
+  width: 300px;
+  color: #2285b1;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid #2285b1;
+}
+
+.diag_btn input::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #2285b1;
+  border-right: 3px solid #2285b1;
+  transform: rotate(45deg);
+}
+
+.diag_btn input:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #a0c4d3;
+}
+
+.diag_btn input:hover::after {
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333;
+} */
+.diag_btn {
+  display       : inline-block;
+  /* border-radius : 10%;          角丸       */
+  font-size     : 2rem;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 8px 24px;   /* 余白       */
+  background    : rgba(6, 6, 167, 0.8);     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 4px 4px 18px #666666;  /* 影の設定 */
+  border        : 2px solid rgba(0, 0, 127, 0.80);    /* 枠の指定 */
+}
+.diag_btn:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : rgba(0, 0, 127, 0.80);     /* 背景色     */
+  background    : #b0afd2;     /* 文字色     */
 	border: none;
-}
-
-.btn-radius-gradient-wrap {
-	display: inline-block;
-
-	padding: 0.5rem;
-
-	border-radius: 100vh;
-	/* background: #f2f5f6; */
-	background: var(--button-firstColor);
-	background: -webkit-linear-gradient(
-		to top,
-		var(--button-firstColor) 0%,
-		var(--button-secondColor) 37%,
-		var(--button-thirdColor) 100%
-	);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		from(var(--button-firstColor)),
-		color-stop(37%, var(--button-secondColor)),
-		to(var(--button-thirdColor))
-	);
-	background: -webkit-linear-gradient(
-		top,
-		var(--button-firstColor) 0%,
-		var(--button-secondColor) 37%,
-		var(--button-thirdColor) 100%
-	);
-	background: linear-gradient(
-		to bottom,
-		var(--button-firstColor) 0%,
-		var(--button-secondColor) 37%,
-		var(--button-thirdColor) 100%
-	);
-
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--button-firstColor)', endColorstr='var(--button-thirdColor)', GradientType=0);
-}
-
-input.btn-radius-gradient {
-	border-radius: 100vh;
-	background: var(--button-secondColor);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		from(var(--button-secondColor)),
-		to(var(--button-firstColor))
-	);
-	background: -webkit-linear-gradient(
-		top,
-		var(--button-secondColor) 0%,
-		var(--button-firstColor) 100%
-	);
-	background: linear-gradient(
-		to bottom,
-		var(--button-secondColor) 0%,
-		var(--button-firstColor) 100%
-	);
-
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--button-secondColor)', endColorstr='var(--button-firstColor)', GradientType=0);
-}
-
-input.btn-radius-gradient:hover {
-	-webkit-transform: scale(1.05);
-	transform: scale(1.05);
+	box-shadow    : 4px 4px 18px #666666
 }
 
 /* end of sumbit */
@@ -339,27 +358,40 @@ input.btn-radius-gradient:hover {
 /* .result_container */
 .result_container {
 	outline: 2px solid red;
+    background-color: #171617;
 }
 /* end of .result_container */
 
 /* result_section */
 .result_section {
 	width: 80%;
-	margin: 15px auto;
+	margin: 16px auto 32px;
 	outline: 2px solid skyblue;
 	font-size: 1.5em;
+    
 }
 
 /* result_stmt */
 .result_stmt {
-	text-align: center;
+	/* text-align: center; */
+    flex-direction: column;
+    vertical-align: middle;
+    width: 50%;
 }
-.result_stmt p {
-	padding: 10px 0;
+.result_stmt_box {
     text-align: left;
 }
+.result_stmt p {
+	/* padding-left: 10%; */
+    text-align: left;
+    display: inline-block;
+}
 .persent {
-	font-size: 20px;
+	font-size: 2.0em;
+}
+.result_stmt section {
+    font-size: 4.0em;
+    display: inline-block;
 }
 
 /* end of result_stmt */
@@ -368,16 +400,29 @@ input.btn-radius-gradient:hover {
 .result_desc {
 	padding: 10px 0;
     vertical-align: middle;
+    width: 50%;
+    /* margin: auto 0; */
 }
 .result_desc p {
     text-align: right;
 }
 /* end of result_desc */
 
+.results {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+
 /* share_buttons */
 /* .share_buttons {
 	/* width: 100%; */
 /* } */
+.share_sentence p{
+font-size: 1.6rem;
+color: white;
+margin-bottom: 16px;
+}
 
 .twitter {
 	background: #6174A2;
@@ -392,13 +437,14 @@ input.btn-radius-gradient:hover {
 	width: 90%;
 	margin: 0 auto;
 }
+.other_buttons a{
+	width: 50%;
+}
 .line {
 	background: #3D783B;
-	width: 50%;
 }
 .facebook {
 	background: #5257A4;
-	width: 50%;
 }
 .twitter,
 .line,
@@ -414,6 +460,60 @@ input.btn-radius-gradient:hover {
 /* end of share_buttons */
 
 /* case_desc */
+.case_desc{
+	display: flex;
+	width: 80%;
+	margin: 40px auto;
+}
+.case_desc p{
+	text-align: left;
+}
+.case_desc_title{
+	width: 40%;
+}
+.case_desc_title p{
+	font-size: 1.8rem;
+	letter-spacing: .2rem;
+	line-height: 2.4rem;
+}
+.case_desc_detail{
+	width: 60%;
+	margin-left: 24px;
+}
+.case_desc_detail p{
+	font-size: .8rem;
+	transform: scale(0.8);
+	transform-origin:0 0;
+line-height: 2.2rem;
+letter-spacing: .2rem;
+}
+
+/* .diag_desc{
+	display: flex;
+	width: 85%;
+	margin: 40px auto;
+}
+.diag_desc p{
+text-align: left;
+}
+.diag_deac_title{
+	width: 40%;
+}
+.diag_deac_title p{
+	font-size: 1.6rem;
+	letter-spacing: .2rem;
+	line-height: 2.4rem;
+}
+.diag_deac_detail{
+	text-align: left;
+	width: 60%;
+}
+.diag_deac_detail p{
+	font-size: 1.2rem;
+	transform: scale(0.8);
+line-height: 2.2rem;
+letter-spacing: .2rem;
+} */
 
 /* end of case_desc */
 
@@ -447,6 +547,16 @@ input.btn-radius-gradient:hover {
 	justify-content: space-between;
 	padding: 0;
 	cursor: pointer;
+	border-radius: 30px;
+	overflow: hidden;
+	background-color: rgba(32, 33, 33, 1) ;
+	transition: background-color 0.2s;
+	/* box-shadow: 2px 2px 4px gray; */
+	display: inline-block;
+	outline: 1px solid white;
+}
+.official button:hover {
+	background-color: rgba(255, 255, 255, 0.555);
 }
 .official a {
 	text-decoration: none;
@@ -464,10 +574,18 @@ input.btn-radius-gradient:hover {
 }
 .official-pic {
 	width: 35%;
+	opacity: 0.6;
+	transition: background-color 0.2s;
+}
+.official button:hover .official-pic{
+	opacity: 0.3;
 }
 .official i {
 	font-size: 25px;
 	/* margin: 0 20px; */
+}
+.link_button {
+	margin: 10px auto;
 }
 
 /* end of official */
@@ -476,3 +594,63 @@ input.btn-radius-gradient:hover {
 
 
 /*  */
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+	.first_view h1{
+
+		top: 55%;
+		transform: translateY(-50%);
+	width: 100%;
+	font-size: 1.6rem;
+	line-height: 2rem;
+	margin: 0;
+	}
+.diag_desc{
+	display: block;
+	/* width: 100%; */
+	/* margin: 40px auto; */
+
+}
+.diag_deac_title{
+	width: 100%;
+	margin-bottom: 24px;
+}
+/* .diag_deac_title p{
+	font-size: 2rem;
+	letter-spacing: .2rem;
+	line-height: 2.4rem;
+} */
+.diag_deac_detail{
+	/* outline: var(--main-outline); */
+	/* text-align: left; */
+	width: 100%;
+}
+.diag_deac_detail p{
+	font-size: 1rem;
+line-height: 2rem;
+letter-spacing: .2rem;
+transform: scale(0.8);
+transform-origin:0 0;
+}
+.name {
+	width: 70%;
+	margin: 40px auto;
+}
+.name p {
+	line-height: 16px;
+	font-size: 1.6rem;
+	padding-bottom: 16px;
+	text-align: left;
+}
+.name input[type="text"] {
+	/* font: 15px/24px sans-serif; */
+	font-size: 12px;
+	box-sizing: border-box;
+	width: 100%;
+	/* padding: 0.3em; */
+	transition: 0.5s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+}
