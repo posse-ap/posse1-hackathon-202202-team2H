@@ -35,9 +35,7 @@ $questions = getAllQuestions($db);
         </h1>
     </div>
     <div class="diag_desc section">
-        <p>この診断は〇〇です。</p>
-        <p>この診断は〇〇です。</p>
-        <p>この診断は〇〇です。</p>
+        <p>この診断は〇〇のために行います。</p>
     </div>
     <form action="" method="POST">
         <input type="hidden" name="token" value="<?= htmlspecialchars($_SESSION['token'], ENT_QUOTES) ?>">
