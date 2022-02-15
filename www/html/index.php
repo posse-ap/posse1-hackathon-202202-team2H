@@ -36,7 +36,19 @@ $questions = getAllQuestions($db);
     </div>
  <div class='top_container_bg'>
     <div class="diag_desc section">
-        <p>この診断は〇〇のために行います。</p>
+        <div class='diag_deac_title'>
+          <p>意識高い系から
+             <br>本物の"意識高い"人材に</p>
+        </div>
+        <div class='diag_deac_detail'>
+        <p>なかなか友達と意見が合わない。
+         <br>自宅には読んでいない本が積読されている。</p>
+        <p>今とは違うあなたになるために。
+         <br>今までとは違う新しいあなたに出会うために。</p>
+        <p>この診断であなたの意識の高さを知ろう。</p>
+        
+        </p>
+        </div>
     </div>
     <form action="" method="POST">
         <input type="hidden" name="token" value="<?= htmlspecialchars($_SESSION['token'], ENT_QUOTES) ?>">
