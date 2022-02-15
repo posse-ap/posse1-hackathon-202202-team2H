@@ -30,7 +30,9 @@ $questions = getAllQuestions($db);
 <!-- top -->
 <div class="top_container">
     <div class="first_view">
-        <h1>いたすぎる意識高い系診断</h1>
+        <h1>できる大学生ならわかって当然！
+            <br>意識高い系診断
+        </h1>
     </div>
     <div class="diag_desc section">
         <p>この診断は〇〇です。</p>
