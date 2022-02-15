@@ -317,6 +317,13 @@ input.btn-radius-gradient:hover {
  /* end of posse-desc */
 
  /* official */
+ .official img {
+     width: 50%;
+ }
+ .official button {
+     width: 100%;
+ }
+
 
  /* end of official */
 
