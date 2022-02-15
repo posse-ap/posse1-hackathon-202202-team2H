@@ -1,11 +1,13 @@
 <?php
 
-function getAllQuestions($db) {
+function getAllQuestions($db)
+{
     $stmt = $db->query("SELECT questions.id, questions.title as title, categories.title as category FROM questions INNER JOIN categories ON questions.category_id=categories.category_id");
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function getQuestion($db, $question_id) {
+function getQuestion($db, $question_id)
+{
     $stmt = $db->prepare("SELECT title FROM questions WHERE id=:id");
     $stmt->bindValue(':id', $question_id);
     $stmt->execute();
@@ -13,8 +15,9 @@ function getQuestion($db, $question_id) {
     return $question['title'];
 }
 
-function getChoices($db, $question_id) {
-    $stmt = $db->prepare("SELECT choice_text, score FROM choices WHERE question_id=:question_id");
+function getChoices($db, $question_id)
+{
+    $stmt = $db->prepare("SELECT id, choice_text, score FROM choices WHERE question_id=:question_id");
     $stmt->bindValue(':question_id', $question_id);
     $stmt->execute();
     $choices = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -22,17 +25,19 @@ function getChoices($db, $question_id) {
 }
 
 
-function sumInputScore() {
+function sumInputScore()
+{
     $scores = $_REQUEST['answers'];
     $result = 0;
-    foreach($scores as $score){
+    foreach ($scores as $score) {
         $result += $score;
     }
     return $result;
 }
 
 
-function getMaxChoice($db, $question_id) {
+function getMaxChoice($db, $question_id)
+{
     $stmt = $db->prepare("SELECT MAX(score) FROM choices WHERE question_id=:question_id");
     $stmt->bindValue(':question_id', $question_id);
     $stmt->execute();
@@ -40,7 +45,8 @@ function getMaxChoice($db, $question_id) {
     return $max['MAX(score)'];
 }
 
-function getMaxScores($db) {
+function getMaxScores($db)
+{
     $ids = $_REQUEST['ids'];
     $result = 0;
     foreach ($ids as $id) {
@@ -49,19 +55,32 @@ function getMaxScores($db) {
     return $result;
 }
 
-function getPercentage($db) {
+function getPercentage($db)
+{
     return round(sumInputScore() / getMaxScores($db) * 100);
 }
 
 // Token
-function createToken() {
+function createToken()
+{
     if (!isset($_SESSION['token'])) {
         $_SESSION['token'] = bin2hex(random_bytes(32));
     }
 }
 
-function validate() {
+function validate()
+{
     if (empty($_SESSION['token']) || $_SESSION['token'] !== filter_input(INPUT_POST, 'token')) {
         exit('Invalid post request');
     }
+}
+
+
+function is_nullorempty($obj)
+{
+    if ($obj === 0 || $obj === "0") {
+        return false;
+    }
+
+    return empty($obj);
 }
