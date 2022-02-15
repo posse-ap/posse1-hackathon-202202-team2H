@@ -59,7 +59,8 @@ include dirname(__FILE__) . '/header.php';
 
     <!-- posse_desc  -->
     <section class="posse_desc result_section">
-        <p>プログラミング学習コミュニティPOSSEでは”プログラミング×人格”のもと、プログラミング面と人格面の成長を目指しています。あなたも私たちと一緒にPOSSEで成長しませんか？</p>
+        <p class="invitation">プログラミング学習コミュニティPOSSEでは一緒にプログラミングをする仲間を募集しています。</p>
+        <p>プログラミング×人格の両輪を掲げるPOSSEで一緒に大学生活を謳歌しませんか？</p>
     </section>
     <!-- end of posse_desc -->
 

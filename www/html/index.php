@@ -55,10 +55,10 @@ $questions = getAllQuestions($db);
     <form action="" method="POST">
         <input type="hidden" name="token" value="<?= htmlspecialchars($_SESSION['token'], ENT_QUOTES) ?>">
         <?php foreach ($questions as $question) : ?>
-        <div class="question section">
+        <div class="question">
             <input type="hidden" name="ids[]" value="<?= $question['id'] ?>">
             <div class="question_stmt">
-                <p><?= $question['title'] ?></p>
+                <p>Q<?= $question['id'] ?>. <?= $question['title'] ?></p>
             </div>
             <ul>
                 <?php $choices = getChoices($db, $question['id']);
@@ -90,7 +90,8 @@ $questions = getAllQuestions($db);
     </div> -->
         <div class="btn-radius-gradient-wrap submit section">
             <!-- <a href="" class="btn btn-radius-gradient">PUSH！</a> -->
-            <input type="submit" value="診断する" class="btn btn-radius-gradient">
+            <p>お疲れさまでした！</p>
+            <input type="submit" value="診断する" class="diag_btn">
         </div>
     </form>
 </div>
