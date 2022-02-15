@@ -282,9 +282,11 @@ input.btn-radius-gradient:hover {
 }
 .result_stmt p {
 	padding: 10px 0;
+    text-align: left;
 }
 .result_stmt span {
 	font-size: 20px;
+    
 }
 
 /* end of result_stmt */
