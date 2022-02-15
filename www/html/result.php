@@ -28,7 +28,7 @@ include dirname(__FILE__) . '/header.php'
         </div>
         <div class="other_buttons">
             <div class="line">
-                <a href="http://line.me/R/msg/text/?私はx点でしたhttps://deep-blog.jp/engineer/share-button-url-list/"
+                <a href="http://line.me/R/msg/text/?意識高い度診断: <?= $_SESSION['result'] ?>点https://deep-blog.jp/engineer/share-button-url-list/"
                     target="_blank">
                     <img src="img/line.png" alt="ラインのロゴ">
                 </a>
