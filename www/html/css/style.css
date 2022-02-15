@@ -376,6 +376,11 @@ font-size: 2rem;
 	padding-top: 20px;
 
 }
+.result_section_little{
+	margin: 12px auto;
+	width: 80%;
+	font-size: 1.5rem;
+}
 
 /* result_stmt */
 /* .result_stmt {
@@ -649,7 +654,7 @@ color: #FFB8AA;
   transition:800ms ease all;
   outline:none;
 	margin: 0 auto;
-	width: 60%;
+	width: 40%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -681,7 +686,27 @@ color: #FFB8AA;
 .posse_btn a{
 	width: 100%;
 }
+/* jquery */
+.box {
+	width: 100%;
+	/* max-width: 500px; */
+	/* margin: 40px auto; */
+	padding: 20px 20px 0;
+	color: #a8aabc;
+	box-sizing: border-box;
+	/* box-shadow: 2px 2px 5px 0px rgba(200,200,200,1); */
+	/* background-color: #ffffff; */
+}
 
+.fadeIn {
+	transform: translate3d(0, -10px, 0);
+	transition: 3s;
+	opacity: 0;
+}
+.fadeIn.animated {
+	transform: translate3d(0, 0, 0);
+	opacity: 1;
+}
 
 
 /* end of official */
@@ -795,6 +820,10 @@ line-height: 2.4rem;
 	/* transform-origin:0 0; */
 	transform: none;
 }
+
+.posse_btn{
+	width: 70%;
+}
 }
 
 /* index.htmlのタイトルのレスポンシブ対応 */
@@ -825,7 +854,7 @@ line-height: 2.4rem;
       background-color: rgba(0, 60, 71, 0.8);
       border-radius: 10px;
       }
-      
+
 }
 @media screen and (max-width: 350px){
     .first_view h1 {

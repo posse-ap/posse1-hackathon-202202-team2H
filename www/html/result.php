@@ -84,7 +84,7 @@ include dirname(__FILE__) . '/header.php';
     <!-- end of share_buttons -->
 
     <!-- case_desc -->
-    <section class="container case_desc result_section">
+    <section class="container case_desc result_section box fadeIn">
         <div class="case_desc_title">
             <p>信頼できる人脈で
                 <br>新たな自分へと...
@@ -93,7 +93,7 @@ include dirname(__FILE__) . '/header.php';
         <div class='case_desc_detail'>
             <p>
                 人脈とは、困ったときに助けを求めたり求められたり、利害関係が成り立つ人と人とのつながりのことを指します。
-            </p>    
+            </p>
             <p>
                 キャリア形成において、人脈は必須と言っても過言ではありません。
             </p>
@@ -104,12 +104,11 @@ include dirname(__FILE__) . '/header.php';
             </p>
         </div>
 
-
     </section>
     <!-- end of case_desc -->
 
     <!-- posse_desc  -->
-    <section class="posse_desc result_section container">
+    <section class="posse_desc result_section container result_section_little box fadeIn">
         <div class="invitation">
             <p>プログラミング学習コミュニティPOSSEでは一緒にプログラミングをする仲間を募集しています。</p>
         </div>
