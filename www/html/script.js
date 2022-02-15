@@ -15,7 +15,6 @@
     twitterOpen.addEventListener('click', () => {
         twitterModal.classList.remove('hidden');
         mask.classList.remove('hidden');
-        console.log("aaa")
     });
     
     lineOpen.addEventListener('click', () => {
