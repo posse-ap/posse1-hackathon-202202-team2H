@@ -57,6 +57,7 @@ footer{
     background: #F5F5F7;
     padding: 40px;
     color: #939397;
+    width: 100%;
 }
 .footer_line{
     width: 100%;
@@ -317,18 +318,36 @@ input.btn-radius-gradient:hover {
  /* end of posse-desc */
 
  /* official */
- .official img {
+ /* .official img {
+     width: 50%;
+ } */
+ .logo-pic {
      width: 50%;
  }
  .official button {
      width: 100%;
      display: flex;
      align-items: center;
+     justify-content: space-between;
+     padding: 0;
+     /* gap: 10%; */
+ }
+ .official div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 40%;
+   padding-left: 5%;
+ }
+ .official p {
+    display: inline-block;
  }
 .official-pic {
-    width: 40%;
-    /* height: 40%; */
-    object-fit: cover;
+    width: 35%;
+}
+.official i {
+    font-size: 25px;
+    /* margin: 0 20px; */
 }
 
  /* end of official */
