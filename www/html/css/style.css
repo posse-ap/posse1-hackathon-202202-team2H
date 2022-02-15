@@ -526,6 +526,16 @@ letter-spacing: .2rem;
 	justify-content: space-between;
 	padding: 0;
 	cursor: pointer;
+	border-radius: 30px;
+	overflow: hidden;
+	background-color: rgba(32, 33, 33, 1) ;
+	transition: background-color 0.2s;
+	/* box-shadow: 2px 2px 4px gray; */
+	display: inline-block;
+	outline: 1px solid white;
+}
+.official button:hover {
+	background-color: rgba(255, 255, 255, 0.555);
 }
 .official a {
 	text-decoration: none;
@@ -543,10 +553,18 @@ letter-spacing: .2rem;
 }
 .official-pic {
 	width: 35%;
+	opacity: 0.6;
+	transition: background-color 0.2s;
+}
+.official button:hover .official-pic{
+	opacity: 0.3;
 }
 .official i {
 	font-size: 25px;
 	/* margin: 0 20px; */
+}
+.link_button {
+	margin: 10px auto;
 }
 
 /* end of official */
@@ -555,3 +573,63 @@ letter-spacing: .2rem;
 
 
 /*  */
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+	.first_view h1{
+
+		top: 55%;
+		transform: translateY(-50%);
+	width: 100%;
+	font-size: 1.6rem;
+	line-height: 2rem;
+	margin: 0;
+	}
+.diag_desc{
+	display: block;
+	/* width: 100%; */
+	/* margin: 40px auto; */
+
+}
+.diag_deac_title{
+	width: 100%;
+	margin-bottom: 24px;
+}
+/* .diag_deac_title p{
+	font-size: 2rem;
+	letter-spacing: .2rem;
+	line-height: 2.4rem;
+} */
+.diag_deac_detail{
+	/* outline: var(--main-outline); */
+	/* text-align: left; */
+	width: 100%;
+}
+.diag_deac_detail p{
+	font-size: 1rem;
+line-height: 2rem;
+letter-spacing: .2rem;
+transform: scale(0.8);
+transform-origin:0 0;
+}
+.name {
+	width: 70%;
+	margin: 40px auto;
+}
+.name p {
+	line-height: 16px;
+	font-size: 1.6rem;
+	padding-bottom: 16px;
+	text-align: left;
+}
+.name input[type="text"] {
+	/* font: 15px/24px sans-serif; */
+	font-size: 12px;
+	box-sizing: border-box;
+	width: 100%;
+	/* padding: 0.3em; */
+	transition: 0.5s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+}
