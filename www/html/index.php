@@ -34,6 +34,7 @@ $questions = getAllQuestions($db);
             <br>意識高い系診断
         </h1>
     </div>
+ <div class='top_container_bg'>
     <div class="diag_desc section">
         <p>この診断は〇〇のために行います。</p>
     </div>
@@ -77,6 +78,7 @@ $questions = getAllQuestions($db);
             <input type="submit" value="診断する" class="btn btn-radius-gradient">
         </div>
     </form>
+</div>
 </div>
 <!-- end of top -->
 

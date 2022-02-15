@@ -11,11 +11,11 @@ p {
 body {
 	text-align: center;
   margin: 0;
+	font-size: 62.5%;
 }
 html {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	font-size: 62.5%;
 }
 /* a{
 
@@ -60,9 +60,8 @@ footer {
 /* end of footer */
 
 /* top_page */
-/* .top_container {
-	width: 80%;
-	margin: 0 auto;
+/* .top_container_bg{
+	background-color: #100F10;
 } */
 /* first_view & diag_desc*/
 .first_view {
@@ -91,9 +90,10 @@ footer {
   top: 60%;
   transform: translateY(-50%);
 width: 100%;
-font-size: 3rem;
-line-height: 3rem;
+font-size: 2rem;
+line-height: 2rem;
 margin: 0;; 
+color: white;
 }
 
 
@@ -113,7 +113,7 @@ margin: 0;;
 	/* outline:var(--main-outline); */
 	height: 50px;
 	line-height: 50px;
-	width: 400px;
+	/* width: 400px; */
 	margin: 0 auto;
 	font-size: 2rem;
 }
@@ -126,7 +126,6 @@ margin: 0;;
 .name {
 	position: relative;
 	margin: 0 auto;
-	width: 400px;
 }
 .name p {
 	line-height: 16px;
@@ -267,6 +266,9 @@ input.btn-radius-gradient:hover {
 /* end of sumbit */
 
 /* end of top_page */
+
+
+
 
 /* result_page */
 
