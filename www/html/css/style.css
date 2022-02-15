@@ -10,6 +10,8 @@ p {
 }
 body {
 	text-align: center;
+    color: #e6eced;
+    background: #003c47;
 }
 html {
 	-webkit-box-sizing: border-box;
