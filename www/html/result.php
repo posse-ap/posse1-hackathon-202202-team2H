@@ -23,20 +23,20 @@ include dirname(__FILE__) . '/header.php'
         <div class="twitter">
             <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=私はx点でした&related=@posse_program"
                 target="_blank" data-text="バズブログです！よろしく" data-show-count="false">
-                <img src="img/twitter.png" alt="ツイッターのロゴ">
+                <img src="img/twitter.jpg" alt="ツイッターのロゴ">
             </a>
         </div>
         <div class="other_buttons">
             <div class="line">
                 <a href="http://line.me/R/msg/text/?私はx点でしたhttps://deep-blog.jp/engineer/share-button-url-list/"
                     target="_blank">
-                    <img src="img/line.png" alt="ラインのロゴ">
+                    <img src="img/line.jpg" alt="ラインのロゴ">
                 </a>
             </div>
             <div class="facebook">
                 <a href="https://www.facebook.com/share.php?u=https://deep-blog.jp/engineer/share-button-url-list/"
                     target="_blank">
-                    <img src="img/facebook.png" alt="facebookのロゴ">
+                    <img src="img/facebook.jpg" alt="facebookのロゴ">
                 </a>
             </div>
         </div>
