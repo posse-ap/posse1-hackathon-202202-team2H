@@ -405,6 +405,14 @@ input.btn-radius-gradient:hover {
 	justify-content: space-between;
 	padding: 0;
 	cursor: pointer;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255, 0.5);
+    transition: background-color 0.2s;
+    box-shadow: 2px 2px 4px gray;
+}
+.official button:hover {
+    background-color: rgb(255, 255, 255, 0.3);
 }
 .official a {
 	text-decoration: none;
@@ -422,6 +430,11 @@ input.btn-radius-gradient:hover {
 }
 .official-pic {
 	width: 35%;
+    opacity: 0.6;
+    transition: background-color 0.2s;
+}
+.official button:hover .official-pic{
+    opacity: 0.3;
 }
 .official i {
 	font-size: 25px;
