@@ -119,8 +119,7 @@ include dirname(__FILE__) . '/header.php';
        <div class='invitation_detail'>
        <p>実際にプログラミングと人格について学び、
           <br>このような診断サイトも制作できるようになります。</p>
-        <p>意識高い系ではなく、
-           <br>我々と一緒に本物の意識高い人を目指しませんか？</p>
+        <p>意識高い系ではなく、我々と一緒に本物の意識高い人を目指しませんか？</p>
        </div>
        
 
@@ -129,16 +128,22 @@ include dirname(__FILE__) . '/header.php';
 
     <!-- official -->
     <section class="official result_section">
+        <div class="posse_btn">
         <a href="https://posse-ap.com/">
-            <button>
+          click here!
+        </a>
+        </div>
+       
+            <!-- <button>
                 <div class="link_button">
                     <img class="logo-pic" src="img/posseLogo.png" alt="posseロゴ">
                     <p>プログラミング学習コミュニティ</p>
-                </div>
+                </div> -->
                 <!-- <i class="bi bi-arrow-right-circle"></i> -->
                 <!-- <img class="official-pic" src="img/posselink.jpg" alt="posse画像"> -->
-            </button>
-        </a>
+            <!-- </button> -->
+
+        
     </section>
     <!-- end of official -->
 
