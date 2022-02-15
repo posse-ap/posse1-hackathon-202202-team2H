@@ -322,8 +322,14 @@ input.btn-radius-gradient:hover {
  }
  .official button {
      width: 100%;
+     display: flex;
+     align-items: center;
  }
-
+.official-pic {
+    width: 40%;
+    /* height: 40%; */
+    object-fit: cover;
+}
 
  /* end of official */
 
