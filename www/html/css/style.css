@@ -284,9 +284,8 @@ input.btn-radius-gradient:hover {
 	padding: 10px 0;
     text-align: left;
 }
-.result_stmt span {
+.persent {
 	font-size: 20px;
-    
 }
 
 /* end of result_stmt */
@@ -294,6 +293,10 @@ input.btn-radius-gradient:hover {
 /* result_desc */
 .result_desc {
 	padding: 10px 0;
+    vertical-align: middle;
+}
+.result_desc p {
+    text-align: right;
 }
 /* end of result_desc */
 
@@ -384,3 +387,6 @@ input.btn-radius-gradient:hover {
 /* end of official */
 
 /* end of result_page */
+
+
+/*  */
