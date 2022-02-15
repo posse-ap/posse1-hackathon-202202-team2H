@@ -28,6 +28,9 @@ include dirname(__FILE__) . '/header.php';
 
     <!-- share_buttons -->
     <div class="share_buttons result_section">
+            <div class="share_sentence">
+              <p>シェアして人脈を広げよう！</p>
+            </div>
         <div class="twitter">
             <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=<?= $_SESSION['nickname'] ?>さんの意識高い度:<?= $_SESSION['result'] ?>&related=@posse_program"
                 target="_blank" data-text="バズブログです！よろしく" data-show-count="false">
@@ -53,7 +56,26 @@ include dirname(__FILE__) . '/header.php';
 
     <!-- case_desc -->
     <section class="case_desc result_section">
-        <p>○○問正解だったあなたはなんとかなタイプです。○○しましょう。</p>
+     <div class="case_desc_title">
+      <p>信頼できる人脈で
+          <br>新たな自分へと...
+      </p>
+     </div>
+     <div class='case_desc_detail'>
+     <p>
+       人脈とは、困ったときに助けを求めたり求められたり、利害関係が成り立つ人と人とのつながりのことを指します。
+       </p>
+       <p>
+       キャリア形成において、人脈は必須と言っても過言ではありません。
+       </p>
+      <p>
+     信頼関係のある強固な人脈が
+     <br>自分の可能性を引き出すチャンスです！
+      <!-- 一人では得られない情報を得られたり、アドバイスをもらえたり、ビジネスシーンでもプライベートでも、困ったときや助けてほしいときにプラスの要素をもたらしてくれる存在です。 -->
+      </p>
+     </div>
+      
+
     </section>
     <!-- end of case_desc -->
 
