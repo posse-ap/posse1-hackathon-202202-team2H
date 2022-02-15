@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="../html/css/reset.css">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="../html/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <!-- header -->
   <header class="header">
     <div class='header_container'>
-      <a href=""><img src="../../www/html/img/posseLogo.png" alt=""></a>
+      <a href=""><img src="./img/posseLogo.png" alt=""></a>
       <p>大学生向けプログラミング学習コミュニティ</p>
     </div>
   </header>

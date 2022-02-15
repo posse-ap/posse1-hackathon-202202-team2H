@@ -5,3 +5,8 @@
     (c)新人ハッカソン選抜
   </footer>
   <!-- end of footer -->
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
