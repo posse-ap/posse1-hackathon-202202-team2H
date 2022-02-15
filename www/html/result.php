@@ -7,7 +7,36 @@ include dirname(__FILE__) . '/header.php';
     <!-- modal  -->
     <div class="my_mask my_hidden"  id="mask"></div>
     <section class="my_modal my_hidden" id="modal">
-        <p>モーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルです</p>
+        <h1>シェアして人脈を広げませんか</h1>
+        <div>
+            人脈とは、困ったときに助けを求めたり求められたり、利害関係が成り立つ人と人とのつながりのことを指します。
+        </div>
+        <div>
+            キャリア形成において、人脈は必須と言っても過言ではありません。一人では得られない情報を得られたり、アドバイスをもらえたり、ビジネスシーンでもプライベートでも、困ったときや助けてほしいときにプラスの要素をもたらしてくれる存在です。
+        </div>
+        <div class="share_buttons result_section">
+        <div class="twitter">
+            <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=<?= $_SESSION['nickname'] ?>さんの意識高い度:<?= $_SESSION['result'] ?>&related=@posse_program"
+                target="_blank" data-text="バズブログです！よろしく" data-show-count="false">
+                <img src="img/twitter.jpg" alt="ツイッターのロゴ">
+            </a>
+        </div>
+        <div class="other_buttons">
+            <div class="line">
+                <a href="http://line.me/R/msg/text/?意識高い度診断: <?= $_SESSION['result'] ?>%https://deep-blog.jp/engineer/share-button-url-list/"
+                    target="_blank">
+                    <img src="img/line.jpg" alt="ラインのロゴ">
+                </a>
+            </div>
+            <div class="facebook">
+                <a href="https://www.facebook.com/share.php?u=https://deep-blog.jp/engineer/share-button-url-list/"
+                    target="_blank">
+                    <img src="img/facebook.jpg" alt="facebookのロゴ">
+                </a>
+            </div>
+        </div>
+    </div>
+
     </section>
     <!-- end of modal  -->
 
