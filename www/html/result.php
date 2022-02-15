@@ -12,16 +12,20 @@ include dirname(__FILE__) . '/header.php';
     <!-- end of modal  -->
 
     <!-- result_stmt -->
- <div class="d-flex">
-    <section class="p-2 result_stmt result_section">
-        <p>あなたは意識高い度</p>
-        <p class="persent"><?= $_SESSION['result'] ?>%です!</p>
+ <div class="results">
+    <section class="result_stmt result_section">
+        <div class="result_stmt_box">
+        <p>あなたの意識高い度は</p>
+        </div>
+        <!-- <div class="result_stmt_box"> -->
+        <p class="persent"><section><?= $_SESSION['result'] ?></section><p>%</p></p>
+        <!-- </div> -->
     </section>
     <!-- end of result_stmt -->
 
     <!-- result_desc -->
     <section class="result_desc result_section">
-        <p><?= $_SESSION['result'] ?>%だったあなたは～といっても過言ではないです。いや、過言だろ。</p>
+        <p><?= $_SESSION['result'] ?>%だったあなたは非常に意識が低いです。そんなあなたには、私たちの愛読している本を紹介します。</p>
     </section>
  </div>
     <!-- end of result_desc -->
