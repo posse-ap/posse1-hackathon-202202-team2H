@@ -124,7 +124,7 @@ line-height: 1.4rem;
 /* end of first_view & diag_deac*/
 /* question */
 .question {
-	outline: var(--main-outline);
+	/* outline: var(--main-outline); */
 	padding: 40px;
 }
 .question_stmt p {
@@ -149,12 +149,13 @@ line-height: 1.4rem;
 /* name */
 .name {
 	position: relative;
-	margin: 0 auto;
-	/* width: 400px; */
+	width: 50%;
+	margin: 80px auto 40px;
 }
 .name p {
 	line-height: 16px;
 	font-size: 1.6rem;
+	padding-bottom: 16px;
 }
 .name input[type="text"] {
 	font: 15px/24px sans-serif;
@@ -175,7 +176,7 @@ line-height: 1.4rem;
 /* 参考サイト https://copypet.jp/692/ */
 .name i {
 	position: absolute;
-	top: 34px;
+	top: 40px;
 	left: 8px;
 	padding: 9px 8px;
 	transition: 0.3s;
@@ -290,7 +291,12 @@ input.btn-radius-gradient:hover {
 
 /* end of sumbit */
 
-/* end of top_page */
+/*    end of top_page    */
+
+
+
+
+
 
 /* result_page */
 
