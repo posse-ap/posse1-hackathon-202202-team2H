@@ -26,6 +26,7 @@ services:
     environment:
       MYSQL_DATABASE: diagnose
       MYSQL_ROOT_PASSWORD: password
+    platform: linux/x86_64
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
