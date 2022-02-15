@@ -39,18 +39,25 @@ $questions = getAllQuestions($db);
     <div class="diag_desc section">
     <div class='diag_deac_title'>
           <p>意識高い系から
-             <br>本物の"意識高い"人材に</p>
+             <br>本物の意識高い人材に</p>
         </div>
         <div class='diag_deac_detail'>
-        <p>なかなか友達と意見が合わない。
+        <!-- <p>なかなか友達と意見が合わない。
          <br>自宅には読んでいない本が積読されている。</p>
         <p>今とは違うあなたになるために。
          <br>今までとは違う新しいあなたに出会うために。</p>
-        <p>この診断であなたの意識の高さを知ろう。</p>
+        <p>この診断であなたの意識の高さを知ろう。</p> -->
+        <p>あなたの意識の高さを診断します。</p>
+        <!-- <p>現代を生きるあなたの、意識の高さを診断します。
+        </p> -->
+       <p>意識が高いことは、素晴らしいことです。</p>
+        <p> 常に向上や成長を目指し、それに資するさまざまな事柄に深く注意を払っているのでしょう。</p>
+        <p>ただ、時として意識高い＝いたいことだと誤解されてしまうことがあります。</p>
+        <p>あなたは本物の意識高い人物なのでしょうか？</p>
+
 
         </p>
         </div>
-
     </div>
     <form action="" method="POST">
         <input type="hidden" name="token" value="<?= htmlspecialchars($_SESSION['token'], ENT_QUOTES) ?>">
@@ -88,10 +95,11 @@ $questions = getAllQuestions($db);
         <!-- <div class="submit section">
      <input type="submit" value="診断する" class="btn btn-radius-gradient">
     </div> -->
-        <div class="btn-radius-gradient-wrap submit section">
+        <div class="submit">
             <!-- <a href="" class="btn btn-radius-gradient">PUSH！</a> -->
             <p>お疲れさまでした！</p>
             <input type="submit" value="診断する" class="diag_btn">
+            
         </div>
     </form>
 </div>
