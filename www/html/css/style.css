@@ -126,6 +126,7 @@ color: white;
 .name {
 	position: relative;
 	margin: 0 auto;
+	/* color: #000; */
 }
 .name p {
 	line-height: 16px;
