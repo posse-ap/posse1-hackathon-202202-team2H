@@ -7,7 +7,10 @@
   </footer>
   <!-- end of footer -->
 
-  <script src="./script.js"></script>
-</body>
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+ <script src="./js/jquery.counterup.min.js"></script>
+ <script src="./script.js"></script>
+ </body>
 
-</html>
+ </html>

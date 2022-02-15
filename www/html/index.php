@@ -99,7 +99,7 @@ $questions = getAllQuestions($db);
             <!-- <a href="" class="btn btn-radius-gradient">PUSH！</a> -->
             <p>お疲れさまでした！</p>
             <input type="submit" value="診断する" class="diag_btn">
-            
+
         </div>
     </form>
 </div>
@@ -114,7 +114,10 @@ $questions = getAllQuestions($db);
     (c)新人ハッカソン選抜
   </footer>
   <!-- end of footer -->
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+ <script src="./js/jquery.counterup.min.js"></script>
+ <script src="./scriptindex.js"></script>
 </body>
 
 </html>

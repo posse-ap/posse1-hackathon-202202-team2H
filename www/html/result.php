@@ -41,14 +41,10 @@ include dirname(__FILE__) . '/header.php';
     <!-- end of modal  -->
 
     <!-- result_stmt -->
- <div class="results">
-    <section class="result_stmt result_section">
-        <div class="result_stmt_box">
-        <p>あなたの意識高い度は</p>
-        </div>
-        <!-- <div class="result_stmt_box"> -->
-        <p class="persent"><section><?= $_SESSION['result'] ?></section><p>%</p></p>
-        <!-- </div> -->
+ <div class="d-flex">
+    <section class="p-2 result_stmt result_section">
+        <p>あなたは意識高い度</p>
+        <p class="persent"  id="result"><span class="count_up"><?= $_SESSION['result'] ?></span>%です!</p>
     </section>
     <!-- end of result_stmt -->
 
@@ -108,7 +104,7 @@ include dirname(__FILE__) . '/header.php';
       <!-- 一人では得られない情報を得られたり、アドバイスをもらえたり、ビジネスシーンでもプライベートでも、困ったときや助けてほしいときにプラスの要素をもたらしてくれる存在です。 -->
       </p>
      </div>
-      
+
 
     </section>
     <!-- end of case_desc -->
@@ -138,7 +134,7 @@ include dirname(__FILE__) . '/header.php';
 </div>
 <script src="./scriptresult.js"></script>
  <!-- end of result_container -->
- 
+
 <!-- footer -->
 <footer class="footer">
     <div class="footer_line"></div>
@@ -147,6 +143,10 @@ include dirname(__FILE__) . '/header.php';
     (c)新人ハッカソン選抜
   </footer>
   <!-- end of footer -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+ <script src="./js/jquery.counterup.min.js"></script>
+ <script src="./scriptresult.js"></script>
 
 </body>
 
