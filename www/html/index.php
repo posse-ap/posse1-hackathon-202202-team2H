@@ -90,7 +90,8 @@ $questions = getAllQuestions($db);
     </div> -->
         <div class="btn-radius-gradient-wrap submit section">
             <!-- <a href="" class="btn btn-radius-gradient">PUSH！</a> -->
-            <input type="submit" value="診断する" class="btn btn-radius-gradient">
+            <p>お疲れさまでした！</p>
+            <input type="submit" value="診断する" class="diag_btn">
         </div>
     </form>
 </div>
