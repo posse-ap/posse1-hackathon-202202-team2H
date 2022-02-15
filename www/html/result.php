@@ -125,7 +125,8 @@ include dirname(__FILE__) . '/header.php';
     <!-- end of posse_desc -->
 
     <!-- official -->
-    <section class="official result_section">
+    <section class="official">
+        <!-- <p>覗いてみる</p> -->
         <div class="posse_btn">
             <a href="https://posse-ap.com/">
                 click here!
