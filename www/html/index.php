@@ -10,9 +10,20 @@ createToken();
 // execute validation
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     validate();
-    $_SESSION['result'] = getPercentage($db);
-    print($_SESSION['result']);
-    header('Location: result.php');
+    $ids = $_REQUEST['ids']; // array
+    $answers = $_REQUEST['answers']; // array
+    $error = [];
+    foreach($ids as $id) {
+        if (empty($answers[$id])) {
+            $error['answers'][$id] = 'require';
+        }
+    }
+
+    if(empty($error)) {
+        $_SESSION['result'] = getPercentage($db);
+        print($_SESSION['result']);
+        header('Location: result.php');
+    }
 }
 $questions = getAllQuestions($db);
 ?>
