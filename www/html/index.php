@@ -55,7 +55,7 @@ $questions = getAllQuestions($db);
     <form action="" method="POST">
         <input type="hidden" name="token" value="<?= htmlspecialchars($_SESSION['token'], ENT_QUOTES) ?>">
         <?php foreach ($questions as $question) : ?>
-        <div class="question section">
+        <div class="question">
             <input type="hidden" name="ids[]" value="<?= $question['id'] ?>">
             <div class="question_stmt">
                 <p><?= $question['title'] ?></p>

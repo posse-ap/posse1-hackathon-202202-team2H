@@ -124,22 +124,38 @@ line-height: 1.4rem;
 /* end of first_view & diag_deac*/
 /* question */
 .question {
-	outline: var(--main-outline);
+	/* outline: var(--main-outline); */
 	padding: 40px;
+	display: flex;
+	align-items: center;
+}
+.question_stmt{
+	/* outline: var(--main-outline); */
+	width: 30%;
 }
 .question_stmt p {
 	font-size: 1.2rem;
+	text-align: left;
 }
 .question ul {
 	padding: 0;
+	/* outline: var(--main-outline); */
+	width: 70%;
+	margin-left: 40px;
+	display: flex;
+	flex-direction: column;
+	/* flex-direction: column; */
 }
 .question ul li {
 	/* outline:var(--main-outline); */
 	height: 50px;
 	line-height: 50px;
-	/* width: 400px; */
-	margin: 0 auto;
 	font-size: 2rem;
+	border-bottom: rgba(255,255,255,0.1) solid 1px;
+	text-align: left;
+}
+.question ul li input{
+	margin-right: 10px;
 }
 .question ul li + li {
 	margin-top: 40px;
@@ -149,12 +165,13 @@ line-height: 1.4rem;
 /* name */
 .name {
 	position: relative;
-	margin: 0 auto;
-	/* width: 400px; */
+	width: 50%;
+	margin: 80px auto 40px;
 }
 .name p {
 	line-height: 16px;
 	font-size: 1.6rem;
+	padding-bottom: 16px;
 }
 .name input[type="text"] {
 	font: 15px/24px sans-serif;
@@ -175,7 +192,7 @@ line-height: 1.4rem;
 /* 参考サイト https://copypet.jp/692/ */
 .name i {
 	position: absolute;
-	top: 34px;
+	top: 40px;
 	left: 8px;
 	padding: 9px 8px;
 	transition: 0.3s;
@@ -290,7 +307,12 @@ input.btn-radius-gradient:hover {
 
 /* end of sumbit */
 
-/* end of top_page */
+/*    end of top_page    */
+
+
+
+
+
 
 /* result_page */
 
