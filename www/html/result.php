@@ -6,7 +6,8 @@ include dirname(__FILE__) . '/header.php';
 <div class="result_container">
 
     <!-- result_stmt -->
-    <section class="result_stmt result_section">
+ <div class="d-flex">
+    <section class="p-2 result_stmt result_section">
         <p>あなたは意識高い度</p>
         <span><?= $_SESSION['result'] ?>%です!</span>
     </section>
@@ -16,6 +17,7 @@ include dirname(__FILE__) . '/header.php';
     <section class="result_desc result_section">
         <p><?= $_SESSION['result'] ?>%だったあなたは～といっても過言ではないです。いや、過言だろ。</p>
     </section>
+ </div>
     <!-- end of result_desc -->
 
     <!-- share_buttons -->
