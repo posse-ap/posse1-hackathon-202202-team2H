@@ -72,11 +72,11 @@ footer {
 	background-size: cover;
   background-position: top;
   opacity: .5;
-	height: 70vh;
+	height: 80vh;
 	/* border-radius: 10px; */
   width: 100%;
   position: relative;
-  /* color: #000; */
+  color: #000;
 }
 .first_view::after {
 	content: '';
@@ -84,7 +84,7 @@ footer {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 70vh;
+	height: 80vh;
 	background-image: linear-gradient(180deg, transparent 0 70%, #FFF 100%);
 }
 
@@ -93,9 +93,31 @@ footer {
   top: 60%;
   transform: translateY(-50%);
 width: 100%;
-font-size: 3rem;
-line-height: 3rem;
+font-size: 2rem;
+line-height: 2rem;
 margin: 0;; 
+}
+.diag_desc{
+	display: flex;
+	width: 80%;
+	margin: 40px auto;
+}
+.diag_desc p{
+text-align: left;
+}
+.diag_deac_title{
+	/* outline: var(--main-outline); */
+	margin-right: 20%;
+}
+.diag_deac_detail{
+	/* outline: var(--main-outline); */
+	text-align: left;
+}
+.diag_deac_detail p{
+	font-size: .6rem;
+	transform: scale(0.8);
+transform-origin:0 0;
+line-height: 1.4rem;
 }
 
 
@@ -115,7 +137,7 @@ margin: 0;;
 	/* outline:var(--main-outline); */
 	height: 50px;
 	line-height: 50px;
-	width: 400px;
+	/* width: 400px; */
 	margin: 0 auto;
 	font-size: 2rem;
 }
@@ -128,7 +150,7 @@ margin: 0;;
 .name {
 	position: relative;
 	margin: 0 auto;
-	width: 400px;
+	/* width: 400px; */
 }
 .name p {
 	line-height: 16px;
