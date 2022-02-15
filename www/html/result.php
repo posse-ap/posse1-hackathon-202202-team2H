@@ -112,7 +112,7 @@ include dirname(__FILE__) . '/header.php';
     <!-- end of case_desc -->
 
     <!-- posse_desc  -->
-    <section class="posse_desc result_section">
+    <section class="posse_desc result_section_little">
         <div class="invitation">
           <p>プログラミング学習コミュニティPOSSEでは一緒にプログラミングをする仲間を募集しています。</p>
         </div>
@@ -127,7 +127,8 @@ include dirname(__FILE__) . '/header.php';
     <!-- end of posse_desc -->
 
     <!-- official -->
-    <section class="official result_section">
+    <section class="official">
+        <!-- <p>覗いてみる</p> -->
         <div class="posse_btn">
         <a href="https://posse-ap.com/">
           click here!

@@ -357,10 +357,14 @@ font-size: 2rem;
 /* result_section */
 .result_section {
 	width: 80%;
-	margin: 40px auto;
+	margin: 0 auto 40px;
 	/* outline: 2px solid skyblue; */
 	font-size: 1.5em;
-
+}
+.result_section_little{
+	margin: 24px auto;
+	width: 80%;
+	font-size: 1.5rem;
 }
 
 /* result_stmt */
@@ -602,24 +606,37 @@ color: #FFB8AA;
 .link_button {
 	margin: 10px auto;
 } */ 
-
+.official{
+	padding-bottom: 40px;
+}
+.official p{
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 8px;
+}
 .posse_btn{
   background:#3B3A3B;
   color:#fff;
   border:none;
   position:relative;
-  height:60px;
-  font-size:1.6em;
+  height:40px;
+  font-size: 1.6rem;
+	line-height: 1.6rem;
   padding:0 2em;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
+	margin: 0 auto;
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .posse_btn:hover{
-  background:#fff;
+  background:rgb(216, 215, 215);
   color:#3B3A3B;
 }
-.posse_btn:before,.posse_btn:after{
+.posse_btn:before, .posse_btn:after{
   content:'';
   position:absolute;
   top:0;
@@ -635,14 +652,14 @@ color: #FFB8AA;
   left:0;
   bottom:0;
 }
-.posse_btn:hover:before,.posse_btn:hover:after{
+.posse_btn:hover:before, .posse_btn:hover:after{
   width:100%;
   transition:800ms ease all;
 }
 .posse_btn a{
-	font-size: 1.2rem;
-	line-height: 1.2rem;
+	width: 100%;
 }
+
 
 
 /* end of official */
@@ -727,7 +744,7 @@ transform-origin:0 0;
 }
 
 .case_desc_detail{
-	wid	th: 100%;
+	width: 100%;
 	margin: 0;
 }
 .case_desc_detail p{
