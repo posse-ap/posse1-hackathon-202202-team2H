@@ -15,28 +15,30 @@ include dirname(__FILE__) . '/header.php';
             キャリア形成において、人脈は必須と言っても過言ではありません。一人では得られない情報を得られたり、アドバイスをもらえたり、ビジネスシーンでもプライベートでも、困ったときや助けてほしいときにプラスの要素をもたらしてくれる存在です。
         </div>
         <div class="share_buttons result_section">
-        <div class="twitter">
+            <div class="share_sentence">
+                <p>シェアして人脈を広げませんか</p>
+            </div>
             <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=<?= $_SESSION['nickname'] ?>さんの意識高い度:<?= $_SESSION['result'] ?>&related=@posse_program"
                 target="_blank" data-text="バズブログです！よろしく" data-show-count="false">
-                <img src="img/twitter.jpg" alt="ツイッターのロゴ">
+                    <div class="twitter">
+                        <img src="img/twitter.jpg" alt="ツイッターのロゴ">
+                    </div>
             </a>
-        </div>
-        <div class="other_buttons">
-            <div class="line">
+            <div class="other_buttons">
                 <a href="http://line.me/R/msg/text/?意識高い度診断: <?= $_SESSION['result'] ?>%https://deep-blog.jp/engineer/share-button-url-list/"
                     target="_blank">
-                    <img src="img/line.jpg" alt="ラインのロゴ">
+                        <div class="line">
+                            <img src="img/line.jpg" alt="ラインのロゴ">
+                        </div>
                 </a>
-            </div>
-            <div class="facebook">
                 <a href="https://www.facebook.com/share.php?u=https://deep-blog.jp/engineer/share-button-url-list/"
                     target="_blank">
-                    <img src="img/facebook.jpg" alt="facebookのロゴ">
+                        <div class="facebook">
+                            <img src="img/facebook.jpg" alt="facebookのロゴ">
+                        </div>
                 </a>
             </div>
         </div>
-    </div>
-
     </section>
     <!-- end of modal  -->
 
@@ -58,10 +60,10 @@ include dirname(__FILE__) . '/header.php';
     <!-- share_buttons -->
     <div class="share_buttons result_section">
 
-            <div class="share_sentence">
-              <p>シェアして人脈を広げよう！</p>
-            </div>
-       <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=<?= $_SESSION['nickname'] ?>さんの意識高い度:<?= $_SESSION['result'] ?>&related=@posse_program"
+        <div class="share_sentence">
+            <p>シェアして人脈を広げよう！</p>
+        </div>
+        <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=<?= $_SESSION['nickname'] ?>さんの意識高い度:<?= $_SESSION['result'] ?>&related=@posse_program"
             target="_blank" data-text="バズブログです！よろしく" data-show-count="false">
                 <div class="twitter">
                     <img src="img/twitter.jpg" alt="ツイッターのロゴ">
