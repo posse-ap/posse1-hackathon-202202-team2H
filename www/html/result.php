@@ -2,8 +2,74 @@
 session_start();
 include dirname(__FILE__) . '/header.php'
 ?>
-<main>
-    <h1>あなたの人格度は<span><?= $_SESSION['result'] ?>%です!</span></h1>
-</main>
 
+<div class="result_container">
+
+    <!-- result_stmt -->
+    <section class="result_stmt result_section">
+        <p>あなたは意識高い度</p>
+        <span><?= $_SESSION['result'] ?>%です!</span>
+    </section>
+    <!-- end of result_stmt -->
+
+    <!-- result_desc -->
+    <section class="result_desc result_section">
+        <p><?= $_SESSION['result'] ?>%だったあなたは～といっても過言ではないです。いや、過言だろ。</p>
+    </section>
+    <!-- end of result_desc -->
+
+    <!-- share_buttons -->
+    <div class="share_buttons result_section">
+        <div class="twitter">
+            <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=私はx点でした&related=@posse_program"
+                target="_blank" data-text="バズブログです！よろしく" data-show-count="false">
+                <img src="img/twitter.png" alt="ツイッターのロゴ">
+            </a>
+        </div>
+        <div class="other_buttons">
+            <div class="line">
+                <a href="http://line.me/R/msg/text/?私はx点でしたhttps://deep-blog.jp/engineer/share-button-url-list/"
+                    target="_blank">
+                    <img src="img/line.png" alt="ラインのロゴ">
+                </a>
+            </div>
+            <div class="facebook">
+                <a href="https://www.facebook.com/share.php?u=https://deep-blog.jp/engineer/share-button-url-list/"
+                    target="_blank">
+                    <img src="img/facebook.png" alt="facebookのロゴ">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end of share_buttons -->
+
+    <!-- case_desc -->
+    <section class="case_desc result_section">
+        <p>○○問正解だったあなたはなんとかなタイプです。○○しましょう。</p>
+    </section>
+    <!-- end of case_desc -->
+
+    <!-- posse_desc  -->
+    <section class="posse_desc result_section">
+        <p>プログラミング学習コミュニティPOSSEでは”プログラミング×人格”のもと、プログラミング面と人格面の成長を目指しています。あなたも私たちと一緒にPOSSEで成長しませんか？</p>
+    </section>
+    <!-- end of posse_desc -->
+
+    <!-- official -->
+    <section class="official result_section">
+        <a href="https://posse-ap.com/">
+            <button>
+                <div>
+                    <img class="logo-pic" src="img/posseLogo.png" alt="posseロゴ">
+                    <p>プログラミング学習コミュニティ</p>
+                </div>
+                <i class="bi bi-arrow-right-circle"></i>
+                <img class="official-pic" src="img/posselink.jpg" alt="posse画像">
+            </button>
+        </a>
+    </section>
+    <!-- end of official -->
+
+</div>
+ <!-- end of result_container -->
 <?php include dirname(__FILE__) . '/footer.php' ?>

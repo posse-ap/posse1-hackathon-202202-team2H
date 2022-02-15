@@ -13,39 +13,72 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $ids = $_REQUEST['ids']; // array
     $answers = $_REQUEST['answers']; // array
     $error = [];
-    foreach($ids as $id) {
+    foreach ($ids as $id) {
         if (empty($answers[$id])) {
             $error['answers'][$id] = 'require';
         }
     }
 
-    if(empty($error)) {
+    if (empty($error)) {
         $_SESSION['result'] = getPercentage($db);
-        print($_SESSION['result']);
         header('Location: result.php');
     }
 }
 $questions = getAllQuestions($db);
 ?>
 
-<main>
-question: <?= getQuestion($db, 1) ?><br>
-choices: <?php var_dump(getChoices($db, 1)) ?>
+<!-- top -->
+<div class="top_container">
+    <div class="first_view">
+        <h1>いたすぎる意識高い系診断</h1>
+    </div>
+    <div class="diag_desc section">
+        <p>この診断は〇〇です。</p>
+        <p>この診断は〇〇です。</p>
+        <p>この診断は〇〇です。</p>
+    </div>
+    <form action="" method="POST">
+        <input type="hidden" name="token" value="<?= htmlspecialchars($_SESSION['token'], ENT_QUOTES) ?>">
+        <?php foreach ($questions as $question) : ?>
+        <div class="question section">
+            <input type="hidden" name="ids[]" value="<?= $question['id'] ?>">
+            <div class="question_stmt">
+                <p><?= $question['title'] ?></p>
+            </div>
+            <ul>
+                <?php $choices = getChoices($db, $question['id']) ?>
+                <?php foreach ($choices as $choice) : ?>
+                    <label for="<?= $question['id'] ?>-<?= $choice['id'] ?>">
+                    <li><input type="radio" name="answers[<?= $question['id'] ?>]" value="<?= $choice['score'] ?>" id="<?= $question['id'] ?>-<?= $choice['id'] ?>"><?= $choice['choice_text'] ?></li>
+                </label>
+                <?php endforeach; ?>
 
-<form action="" method="POST">
-    <input type="hidden" name="token" value="<?= htmlspecialchars($_SESSION['token'], ENT_QUOTES) ?>">
-<?php foreach($questions as $question): ?>
-    <input type="hidden" name="ids[]" value="<?= $question['id'] ?>">
-    <h1><?= $question['title'] ?></h1>
-    <?php $choices = getChoices($db, $question['id']) ?>
-    <?php foreach($choices as $choice): ?>
-        <input type="radio" name="answers[<?= $question['id'] ?>]" value="<?= $choice['score'] ?>">
-        <p><?= $choice['choice_text'] ?></p>
-    <?php endforeach; ?>
-<?php endforeach; ?>
-<input type="submit" value="submit">
-</form>
-</main>
+            </ul>
+        </div>
+        <?php endforeach; ?>
+
+
+
+        <!-- <div class="name section">
+      <p>ニックネーム</p>
+      <input type="text" placeholder="ニックネーム" id = 'name' >
+      <i class="fa-solid fa-user"></i>
+    </div> -->
+        <div class="name section">
+            <p>ニックネーム</p>
+            <input type="text" placeholder="ニックネーム" id='name'>
+            <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
+        <!-- <div class="submit section">
+     <input type="submit" value="診断する" class="btn btn-radius-gradient">
+    </div> -->
+        <div class="btn-radius-gradient-wrap submit section">
+            <!-- <a href="" class="btn btn-radius-gradient">PUSH！</a> -->
+            <input type="submit" value="診断する" class="btn btn-radius-gradient">
+        </div>
+    </form>
+</div>
+<!-- end of top -->
 
 <!-- footerの読み込み -->
 <?php include dirname(__FILE__) . '/footer.php' ?>
