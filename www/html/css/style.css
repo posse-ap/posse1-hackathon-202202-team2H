@@ -114,7 +114,7 @@ footer {
 	background: url(../img/shaking-hands-gd698e3efb_1920.jpg);
 	background-size: cover;
   background-position: top;
-  opacity: .5;
+  opacity: .3;
 	height: 80vh;
 	/* border-radius: 10px; */
   width: 100%;
@@ -139,7 +139,8 @@ footer {
 width: 100%;
 font-size: 2rem;
 line-height: 2rem;
-margin: 0;;
+margin: 0;
+font-weight: bold;
 }
 .diag_desc{
 	display: flex;
@@ -281,6 +282,7 @@ letter-spacing: .2rem;
 
 /* 診断ボタンのcss */
 /* 参考サイト　https://jajaaan.co.jp/css/button/ */
+
 
 .submit p{
 margin: 8px 0;
@@ -495,3 +497,66 @@ font-size: 2rem;
 
 
 /*  */
+
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+	.first_view h1{
+
+		top: 55%;
+		transform: translateY(-50%);
+	width: 100%;
+	font-size: 1.6rem;
+	line-height: 2rem;
+	margin: 0;
+	}
+.diag_desc{
+	display: block;
+	/* width: 100%; */
+	/* margin: 40px auto; */
+
+}
+.diag_deac_title{
+	width: 100%;
+	margin-bottom: 24px;
+}
+/* .diag_deac_title p{
+	font-size: 2rem;
+	letter-spacing: .2rem;
+	line-height: 2.4rem;
+} */
+.diag_deac_detail{
+	/* outline: var(--main-outline); */
+	/* text-align: left; */
+	width: 100%;
+}
+.diag_deac_detail p{
+	font-size: 1rem;
+line-height: 2rem;
+letter-spacing: .2rem;
+transform: scale(0.8);
+transform-origin:0 0;
+}
+.name {
+	width: 70%;
+	margin: 40px auto;
+}
+.name p {
+	line-height: 16px;
+	font-size: 1.6rem;
+	padding-bottom: 16px;
+	text-align: left;
+}
+.name input[type="text"] {
+	/* font: 15px/24px sans-serif; */
+	font-size: 12px;
+	box-sizing: border-box;
+	width: 100%;
+	/* padding: 0.3em; */
+	transition: 0.5s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+
+}
