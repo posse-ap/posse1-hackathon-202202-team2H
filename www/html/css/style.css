@@ -8,7 +8,7 @@ p {
 	--button-firstColor: #f2f5f6;
 	--button-secondColor: #e3eaed;
 	--button-thirdColor: #96a1a5;
-	--main-toppage-color:#171617;
+	--main-toppage-color:rgba(0, 60, 71, 1);
 }
 body {
 	text-align: center;
@@ -114,13 +114,12 @@ footer {
 	background: url(../img/shaking-hands-gd698e3efb_1920.jpg);
 	background-size: cover;
   background-position: top;
-  opacity: .5;
+  /* opacity: .5; */
 	height: 80vh;
 	/* border-radius: 10px; */
   width: 100%;
   position: relative;
-  color: #000;
-	
+  /* color: #000; */
 }
 .first_view::after {
 	content: '';
@@ -134,13 +133,25 @@ footer {
 
 .first_view h1{
   position: absolute;
-  top: 60%;
+  top: 30%;
+  left: 50%;
   transform: translateY(-50%);
-width: 100%;
-font-size: 2rem;
+  transform: translateX(-50%);
+/* width: 100%; */
+font-size: 4.0rem;
 line-height: 2rem;
-margin: 0;;
+margin: 0 ;
+padding: 10px 10px;
+color: white;
+background-color: rgba(0, 60, 71, 0.8);
+border-radius: 10px;
+
 }
+.first_view br {
+    display: block;
+    content: "";
+    margin: 20px 0;
+    }
 .diag_desc{
 	display: flex;
 	width: 85%;
@@ -358,7 +369,7 @@ font-size: 2rem;
 /* .result_container */
 .result_container {
 	outline: 2px solid red;
-    background-color: #171617;
+    background-color: rgba(0, 60, 71, 1);
 }
 /* end of .result_container */
 
@@ -368,7 +379,6 @@ font-size: 2rem;
 	margin: 16px auto 32px;
 	outline: 2px solid skyblue;
 	font-size: 1.5em;
-    
 }
 
 /* result_stmt */
