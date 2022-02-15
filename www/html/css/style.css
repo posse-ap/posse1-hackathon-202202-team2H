@@ -356,7 +356,7 @@ font-size: 2rem;
 /* result_section */
 .result_section {
 	width: 80%;
-	margin: 16px auto 32px;
+	margin: 40px auto;
 	outline: 2px solid skyblue;
 	font-size: 1.5em;
 
@@ -509,10 +509,10 @@ letter-spacing: .2rem;
 /* end of case_desc */
 
 /* posse_desc  */
-.posse_desc {
-    flex-direction: column;
-}
-.posse_desc p {
+/* .posse_desc {
+
+} */
+/* .posse_desc p {
     width: 60%;
     text-align: left;
     padding: 20px 5%;
@@ -520,7 +520,31 @@ letter-spacing: .2rem;
 .invitation {
     text-align-last: left;
     font-size: 25px;
+} */
+.posse_desc{
+	text-align: left;
 }
+.posse_desc p{
+	letter-spacing: .2rem;
+}
+.invitation{
+	width: 60%;
+}
+.invitation p{
+	font-size: 1.8rem;
+margin-bottom: 24px;
+line-height: 3.2rem;
+color: #FFB8AA;
+}
+.invitation_detail p{
+	font-size: .8rem;
+	line-height: 2rem;
+	transform: scale(0.8);
+	transform-origin:0 0;
+}
+
+
+
 
 /* end of posse_desc */
 
@@ -643,5 +667,51 @@ transform-origin:0 0;
 	border: 1px solid #1b2538;
 	border-radius: 4px;
 	outline: none;
+}
+
+
+
+
+/* result */
+.case_desc{
+	display: block;
+}
+.case_desc p{
+	text-align: left;
+}
+.case_desc_title{
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+.case_desc_detail{
+	wid	th: 100%;
+	margin: 0;
+}
+.case_desc_detail p{
+line-height: 1.6rem;
+}
+
+/* .posse_desc{
+	/* text-align: left; */
+/* } */ */
+.posse_desc p{
+	letter-spacing: .2rem;
+}
+.invitation{
+	width: 100%;
+}
+.invitation p{
+	font-size: 1.5rem;
+margin-bottom: 24px;
+line-height: 2.4rem;
+}
+.invitation_detail p{
+	font-size: .9rem;
+	line-height: 1.6rem;
+	transform: scale(0.8);
+	transform-origin:0 0;
+	/* transform-origin:0 0; */
+
 }
 }

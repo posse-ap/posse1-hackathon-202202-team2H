@@ -7,7 +7,38 @@ include dirname(__FILE__) . '/header.php';
     <!-- modal  -->
     <div class="my_mask my_hidden"  id="mask"></div>
     <section class="my_modal my_hidden" id="modal">
-        <p>モーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルですモーダルです</p>
+        <h1>シェアして人脈を広げませんか</h1>
+        <div>
+            人脈とは、困ったときに助けを求めたり求められたり、利害関係が成り立つ人と人とのつながりのことを指します。
+        </div>
+        <div>
+            キャリア形成において、人脈は必須と言っても過言ではありません。一人では得られない情報を得られたり、アドバイスをもらえたり、ビジネスシーンでもプライベートでも、困ったときや助けてほしいときにプラスの要素をもたらしてくれる存在です。
+        </div>
+        <div class="share_buttons result_section">
+            <div class="share_sentence">
+                <p>シェアして人脈を広げませんか</p>
+            </div>
+            <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=<?= $_SESSION['nickname'] ?>さんの意識高い度:<?= $_SESSION['result'] ?>&related=@posse_program"
+                target="_blank" data-text="バズブログです！よろしく" data-show-count="false">
+                    <div class="twitter">
+                        <img src="img/twitter.jpg" alt="ツイッターのロゴ">
+                    </div>
+            </a>
+            <div class="other_buttons">
+                <a href="http://line.me/R/msg/text/?意識高い度診断: <?= $_SESSION['result'] ?>%https://deep-blog.jp/engineer/share-button-url-list/"
+                    target="_blank">
+                        <div class="line">
+                            <img src="img/line.jpg" alt="ラインのロゴ">
+                        </div>
+                </a>
+                <a href="https://www.facebook.com/share.php?u=https://deep-blog.jp/engineer/share-button-url-list/"
+                    target="_blank">
+                        <div class="facebook">
+                            <img src="img/facebook.jpg" alt="facebookのロゴ">
+                        </div>
+                </a>
+            </div>
+        </div>
     </section>
     <!-- end of modal  -->
 
@@ -29,10 +60,10 @@ include dirname(__FILE__) . '/header.php';
     <!-- share_buttons -->
     <div class="share_buttons result_section">
 
-            <div class="share_sentence">
-              <p>シェアして人脈を広げよう！</p>
-            </div>
-       <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=<?= $_SESSION['nickname'] ?>さんの意識高い度:<?= $_SESSION['result'] ?>&related=@posse_program"
+        <div class="share_sentence">
+            <p>シェアして人脈を広げよう！</p>
+        </div>
+        <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=<?= $_SESSION['nickname'] ?>さんの意識高い度:<?= $_SESSION['result'] ?>&related=@posse_program"
             target="_blank" data-text="バズブログです！よろしく" data-show-count="false">
                 <div class="twitter">
                     <img src="img/twitter.jpg" alt="ツイッターのロゴ">
@@ -82,8 +113,17 @@ include dirname(__FILE__) . '/header.php';
 
     <!-- posse_desc  -->
     <section class="posse_desc result_section">
-        <p class="invitation">プログラミング学習コミュニティPOSSEでは一緒にプログラミングをする仲間を募集しています。</p>
-        <p>プログラミング×人格の両輪を掲げるPOSSEで一緒に大学生活を謳歌しませんか？</p>
+        <div class="invitation">
+          <p>プログラミング学習コミュニティPOSSEでは一緒にプログラミングをする仲間を募集しています。</p>
+        </div>
+       <div class='invitation_detail'>
+       <p>実際にプログラミングと人格について学び、
+          <br>このような診断サイトも制作できるようになります。</p>
+        <p>意識高い系ではなく、
+           <br>我々と一緒に本物の意識高い人を目指しませんか？</p>
+       </div>
+       
+
     </section>
     <!-- end of posse_desc -->
 

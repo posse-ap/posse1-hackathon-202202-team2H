@@ -1,5 +1,5 @@
-const mask = document.getElementById('mask');
-const modal = document.getElementById('modal');
+var mask = document.getElementById('mask');
+var modal = document.getElementById('modal');
 
 window.addEventListener('load', () => {
     window.addEventListener('scroll', () => {

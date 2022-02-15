@@ -1,4 +1,4 @@
-const scrollers = document.querySelectorAll('.question');
+var scrollers = document.querySelectorAll('.question');
 // ふわっとフェードイン
 document.addEventListener('scroll', () => {
     for (var i = 0; i < scrollers.length; i++) {
