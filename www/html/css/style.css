@@ -67,9 +67,22 @@ footer {
 .first_view {
 	background: url(../img/shaking-hands-gd698e3efb_1920.jpg);
 	background-size: cover;
+  background-position: top;
+  opacity: .5;
 	height: 70vh;
 	/* border-radius: 10px; */
-  width: 100vw;
+  width: 100%;
+  position: relative;
+  
+}
+.first_view h1{
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+width: 100%;
+font-size: 3rem;
+line-height: 3rem;
+margin: 0;; 
 }
 
 
