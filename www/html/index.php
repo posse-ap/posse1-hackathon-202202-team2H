@@ -58,7 +58,7 @@ $questions = getAllQuestions($db);
         <div class="question section">
             <input type="hidden" name="ids[]" value="<?= $question['id'] ?>">
             <div class="question_stmt">
-                <p><?= $question['title'] ?></p>
+                <p>Q<?= $question['id'] ?>. <?= $question['title'] ?></p>
             </div>
             <ul>
                 <?php $choices = getChoices($db, $question['id']);
