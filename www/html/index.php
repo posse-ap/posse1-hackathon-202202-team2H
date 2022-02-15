@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     validate();
     $ids = $_REQUEST['ids']; // array
     $answers = $_REQUEST['answers']; // array
+    $nickname = $_REQUEST['nickname'];
     $error = [];
     foreach ($ids as $id) {
         if (!isset($answers[$id])) {
@@ -21,6 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (empty($error)) {
         $_SESSION['result'] = getPercentage($db);
+        $_SESSION['nickname'] = $_REQUEST['nickname'];
         header('Location: result.php');
     }
 }
@@ -80,7 +82,7 @@ $questions = getAllQuestions($db);
     </div> -->
         <div class="name section">
             <p>ニックネーム</p>
-            <input type="text" placeholder="ニックネーム" id='name'>
+            <input type="text" placeholder="ニックネーム" id='name' name="nickname">
             <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
         </div>
         <!-- <div class="submit section">
