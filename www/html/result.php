@@ -1,6 +1,6 @@
 <?php
 session_start();
-include dirname(__FILE__) . '/header.php'
+include dirname(__FILE__) . '/header.php';
 ?>
 
 <div class="result_container">
