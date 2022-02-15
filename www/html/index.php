@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $answers = $_REQUEST['answers']; // array
     $error = [];
     foreach ($ids as $id) {
-        if (empty($answers[$id])) {
+        if (!isset($answers[$id])) {
             $error['answers'][$id] = 'require';
         }
     }
@@ -36,6 +36,7 @@ $questions = getAllQuestions($db);
     </div>
     <div class="diag_desc section">
         <p>この診断は〇〇のために行います。</p>
+
     </div>
     <form action="" method="POST">
         <input type="hidden" name="token" value="<?= htmlspecialchars($_SESSION['token'], ENT_QUOTES) ?>">
@@ -46,7 +47,8 @@ $questions = getAllQuestions($db);
                 <p><?= $question['title'] ?></p>
             </div>
             <ul>
-                <?php $choices = getChoices($db, $question['id']) ?>
+                <?php $choices = getChoices($db, $question['id']);
+                ?>
                 <?php foreach ($choices as $choice) : ?>
                     <label for="<?= $question['id'] ?>-<?= $choice['id'] ?>">
                     <li><input type="radio" name="answers[<?= $question['id'] ?>]" value="<?= $choice['score'] ?>" id="<?= $question['id'] ?>-<?= $choice['id'] ?>"><?= $choice['choice_text'] ?></li>
