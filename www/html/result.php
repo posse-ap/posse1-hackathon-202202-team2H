@@ -43,7 +43,7 @@ include dirname(__FILE__) . '/header.php';
     <!-- end of modal  -->
 
     <!-- result_stmt -->
- <div class="d-flex">
+ <div class="d-flex result-stmt-container">
     <section class="p-2 result_stmt result_section">
         <p>あなたは意識高い度</p>
         <p class="persent"  id="result"><span class="count_up"><?= $_SESSION['result'] ?></span>%です!</p>
@@ -102,7 +102,7 @@ include dirname(__FILE__) . '/header.php';
        </p>
       <p>
      信頼関係のある強固な人脈が
-     <br>自分の可能性を引き出すチャンスです！
+     <br>自分の可能性を引き出すチャンスです。
       <!-- 一人では得られない情報を得られたり、アドバイスをもらえたり、ビジネスシーンでもプライベートでも、困ったときや助けてほしいときにプラスの要素をもたらしてくれる存在です。 -->
       </p>
      </div>
@@ -114,12 +114,11 @@ include dirname(__FILE__) . '/header.php';
     <!-- posse_desc  -->
     <section class="posse_desc result_section_little">
         <div class="invitation">
-          <p>プログラミング学習コミュニティPOSSEでは一緒にプログラミングをする仲間を募集しています。</p>
+          <p>プログラミング学習コミュニティPOSSEでは<br>共に学び合える仲間を募集しています。</p>
         </div>
        <div class='invitation_detail'>
-       <p>実際にプログラミングと人格について学び、
-          <br>このような診断サイトも制作できるようになります。</p>
-        <p>意識高い系ではなく、我々と一緒に本物の意識高い人を目指しませんか？</p>
+        <p>技術力の向上と同等に、人格面の成長を重要視しています。<br>組織に囚われない個の力が注目される現代社会において、<br>サードプレイスとしてのコミュニティの役割は益々大きくなっていると考えられます。そして利害関係で結ばれないそのような場で求められるものこそ一人一人の人間性に他なりません。<br>
+私たちと共に、メンバーがPOSSEを卒業し社会に羽ばたいた後でも、互いに尊重し合い助け合えるような強いコミュニティを形成していきませんか？</p>
        </div>
        
 
@@ -131,7 +130,7 @@ include dirname(__FILE__) . '/header.php';
         <!-- <p>覗いてみる</p> -->
         <div class="posse_btn">
         <a href="https://posse-ap.com/">
-          click here!
+            公式ページ
         </a>
         </div>
        
@@ -139,10 +138,10 @@ include dirname(__FILE__) . '/header.php';
                 <div class="link_button">
                     <img class="logo-pic" src="img/posseLogo.png" alt="posseロゴ">
                     <p>プログラミング学習コミュニティ</p>
-                </div> -->
-                <!-- <i class="bi bi-arrow-right-circle"></i> -->
-                <!-- <img class="official-pic" src="img/posselink.jpg" alt="posse画像"> -->
-            <!-- </button> -->
+                </div>
+                <i class="bi bi-arrow-right-circle"></i> 
+                <img class="official-pic" src="img/posselink.jpg" alt="posse画像">
+            </button> -->
 
         
     </section>
