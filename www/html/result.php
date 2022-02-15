@@ -9,7 +9,7 @@ include dirname(__FILE__) . '/header.php';
  <div class="d-flex">
     <section class="p-2 result_stmt result_section">
         <p>あなたは意識高い度</p>
-        <span><?= $_SESSION['result'] ?>%です!</span>
+        <p class="persent"><?= $_SESSION['result'] ?>%です!</p>
     </section>
     <!-- end of result_stmt -->
 
