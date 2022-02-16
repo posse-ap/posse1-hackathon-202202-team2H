@@ -133,7 +133,7 @@ if (!isset($_SESSION['result'])) {
                     <img src="img/line.jpg" alt="ラインのロゴ">
                 </div>
             </a>
-            <a href="https://www.facebook.com/share.php?u=https://deep-blog.jp/engineer/share-button-url-list/" target="_blank">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fposse-ap.com%2F&amp;src=sdkpreparse" target="_blank">
                 <div class="facebook">
                     <img src="img/facebook.jpg" alt="facebookのロゴ">
                 </div>
