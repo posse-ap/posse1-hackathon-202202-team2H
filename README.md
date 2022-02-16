@@ -12,10 +12,11 @@ pc環境によって posse1-hackathon-202202-team2h-db-1 と posse1-hackathon-20
 
 ## 4. dbホスト名を変更
 dbconnect.php2行目を以下のように編集お願いします。
-### posse1-hackathon-202202-team2h-db-1の場合
+### ・posse1-hackathon-202202-team2h-db-1の場合
 define('DSN', 'mysql:host=posse1-hackathon-202202-team2h-db-1;dbname=diagnose;charset=utf8mb4');
-### posse1-hackathon-202202-team2h_db_1の場合
+### ・posse1-hackathon-202202-team2h_db_1の場合
 define('DSN', 'mysql:host=posse1-hackathon-202202-team2h_db_1;dbname=diagnose;charset=utf8mb4');
 
-## 5. URLにアクセス
+## 5. URLにアクセス  
 http://localhost:8080
+他に8080ポートを使用しているコンテナがあれば、停止させてください。
