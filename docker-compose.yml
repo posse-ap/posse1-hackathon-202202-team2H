@@ -18,13 +18,17 @@ services:
       - db
 
   db:
-    image: mysql:8.0
+    build: ./mysql
     ports:
       - "13306:3306"
     volumes:
-      - ./mysql/data:/var/lib/mysql
+      - ./mysql/data:/var/mysql
+      - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./mysql/sql:/docker-entrypoint-initdb.d
     environment:
+      MYSQL_DATABASE: diagnose
       MYSQL_ROOT_PASSWORD: password
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
