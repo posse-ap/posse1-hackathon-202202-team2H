@@ -854,6 +854,9 @@ line-height: 2.4rem;
 .posse_btn{
 	width: 70%;
 }
+.disappear{
+    display: none;
+}
 }
 
 /* index.htmlのタイトルのレスポンシブ対応 */
