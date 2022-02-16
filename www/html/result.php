@@ -60,8 +60,6 @@ if (!isset($_SESSION['result'])) {
                     </p>
                 </div>
 
-<<<<<<< HEAD
-=======
         <!-- case_desc -->
         <section class="container case_desc result_section box fadeIn">
             <div class="case_desc_title">
@@ -80,9 +78,8 @@ if (!isset($_SESSION['result'])) {
                     信頼関係のある強固な人脈が
                     <br>自分の可能性を引き出すチャンスです。
                     <!-- 一人では得られない情報を得られたり、アドバイスをもらえたり、ビジネスシーンでもプライベートでも、困ったときや助けてほしいときにプラスの要素をもたらしてくれる存在です。 -->
-                <!-- </p> --> 
+                <!-- </p> -->
             </div>
->>>>>>> 34f80dcab995ec91007fd5b2277e063bbf7e035c
 
             </section>
         </div>
@@ -211,18 +208,11 @@ if (!isset($_SESSION['result'])) {
     <!-- official -->
     <section class="official_sec">
         <!-- <p>覗いてみる</p> -->
-<<<<<<< HEAD
-        <div class="posse_btn">
-            <a href="https://posse-ap.com/">
-                公式ページ
-            </a>
-=======
         <div class="diag_btn w-50 mx-auto">
         <a href="https://posse-ap.com/">
             公式ページ
             <i class="bi bi-caret-right "></i>
         </a>
->>>>>>> 34f80dcab995ec91007fd5b2277e063bbf7e035c
         </div>
 
         <!-- <button>
