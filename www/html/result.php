@@ -185,20 +185,19 @@ include dirname(__FILE__) . '/header.php';
     <section class="official">
         <!-- <p>覗いてみる</p> -->
         <div class="posse_btn">
-            <a href="https://posse-ap.com/">
-                click here!
-            </a>
+        <a href="https://posse-ap.com/">
+            公式ページ
+        </a>
         </div>
 
         <!-- <button>
                 <div class="link_button">
                     <img class="logo-pic" src="img/posseLogo.png" alt="posseロゴ">
                     <p>プログラミング学習コミュニティ</p>
-                </div> -->
-        <!-- <i class="bi bi-arrow-right-circle"></i> -->
-        <!-- <img class="official-pic" src="img/posselink.jpg" alt="posse画像"> -->
-        <!-- </button> -->
-
+                </div>
+                <i class="bi bi-arrow-right-circle"></i>
+                <img class="official-pic" src="img/posselink.jpg" alt="posse画像">
+            </button> -->
 
     </section>
     <!-- end of official -->
