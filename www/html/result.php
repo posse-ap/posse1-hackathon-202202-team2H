@@ -128,7 +128,7 @@ include dirname(__FILE__) . '/header.php';
         <!-- <p>覗いてみる</p> -->
         <div class="posse_btn">
             <a href="https://posse-ap.com/">
-                Read more
+                click here!
             </a>
         </div>
 

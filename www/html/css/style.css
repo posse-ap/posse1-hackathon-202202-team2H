@@ -816,13 +816,13 @@ line-height: 1.6rem;
 	width: 100%;
 }
 .invitation p{
-	font-size: 1.8rem;
+	font-size: 2.5rem;
 margin-bottom: 24px;
 line-height: 2.4rem;
 }
 .invitation_detail p{
-	/* font-size: .9rem; */
-	line-height: 1.6rem;
+	font-size: 1.4rem;
+	line-height: 2.0rem;
 	/* transform: scale(0.8); */
 	/* transform-origin:0 0; */
 	/* transform-origin:0 0; */
