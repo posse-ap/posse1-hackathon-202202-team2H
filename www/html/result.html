@@ -77,18 +77,26 @@
         <!-- end of posse_desc -->
 
         <!-- official -->
-        <section class="official result_section">
-            <a href="https://posse-ap.com/">
-                <button>
-                    <div>
-                        <img class="logo-pic" src="img/posseLogo.png" alt="posseロゴ">
-                        <p>プログラミング学習コミュニティ</p>
-                    </div>
-                    <i class="bi bi-arrow-right-circle"></i>
-                    <img class="official-pic" src="img/posselink.jpg" alt="posse画像">
-                </button>
+        <div class="share_sentence">
+            <p>シェアして人脈を広げよう。</p>
+        </div>
+        <a href="http://twitter.com/share?url=https://posse-ap.com/&text=さんの意識高い度:&related=@posse_program" target="_blank" data-text="バズブログです！よろしく" data-show-count="false">
+            <div class="twitter">
+                <img src="img/twitter.jpg" alt="ツイッターのロゴ">
+            </div>
+        </a>
+        <div class="other_buttons">
+            <a href="http://line.me/R/msg/text/?<?= $_SESSION['nickname'] ?>さんの意識高い度:<?= $_SESSION['result'] ?>https://deep-blog.jp/engineer/share-button-url-list/" target="_blank">
+                <div class="line">
+                    <img src="img/line.jpg" alt="ラインのロゴ">
+                </div>
             </a>
-        </section>
+            <a href="https://www.facebook.com/share.php?u=https://deep-blog.jp/engineer/share-button-url-list/" target="_blank">
+                <div class="facebook">
+                    <img src="img/facebook.jpg" alt="facebookのロゴ">
+                </div>
+            </a>
+        </div>
         <!-- end of official -->
 
     </div>
