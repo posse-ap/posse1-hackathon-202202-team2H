@@ -1,19 +1,14 @@
-var mask = document.getElementById('mask');
-var modal = document.getElementById('modal');
+$(function(){
 
-window.addEventListener('load', () => {
-    window.addEventListener('scroll', () => {
-        // 1000~1100のスクロール量の時モーダル出る
-        // 数値は適当
-        // 割とゆっくりスクロールしないとでない
-        // 逆にゆっくり過ぎてもめっちゃ出る
-        if( 1000 < window.scrollY && 1100 > window.scrollY) {
+setTimeout(function(){
 
-            modal.classList.remove('my_hidden');
-            mask.classList.remove('my_hidden');
-        }
-    });
+modal.classList.remove('my_hidden');
+mask.classList.remove('my_hidden');
+
+    },2000);
+
 });
+
 
 mask.addEventListener('click',()=>{
     modal.classList.add('my_hidden');

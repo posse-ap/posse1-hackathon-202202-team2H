@@ -11,10 +11,9 @@ p {
 	--main-toppage-color:rgba(0, 60, 71, 1);
 }
 body {
-	text-align: center;
 color: #e6eced;
   /* background: #003c47; */
-  margin: 0;
+margin: 0;
 }
 
 
@@ -57,7 +56,7 @@ li {
     display: none;
 }
 .my_modal{
-    background: #f5f5f7;
+    background: rgba(0, 60, 71, 0.8);
 	color: #000;
     width: 70%;
 	height: 70%;
@@ -124,6 +123,7 @@ footer {
 	background: url(../img/shaking-hands-gd698e3efb_1920.jpg);
 	background-size: cover;
   background-position: top;
+  background-attachment: fixed;
   /* opacity: .5; */
 	height: 80vh;
 	/* border-radius: 10px; */
@@ -246,7 +246,6 @@ letter-spacing: .2rem;
 /* name */
 .name {
 	position: relative;
-	width: 50%;
 	margin: 40px auto;
 }
 .name p {
@@ -258,7 +257,7 @@ letter-spacing: .2rem;
 .name input[type="text"] {
 	font: 15px/24px sans-serif;
 	box-sizing: border-box;
-	width: 100%;
+	width: 50%;
 	/* padding: 0.3em; */
 	transition: 0.5s;
 	border: 1px solid #1b2538;
@@ -334,22 +333,23 @@ font-size: 2rem;
   border-right: 3px solid #333333;
 } */
 .diag_btn {
-  display       : inline-block;
   /* border-radius : 10%;          角丸       */
-  font-size     : 2rem;        /* 文字サイズ */
-  text-align    : center;      /* 文字位置   */
+  font-size     : 2rem;        /* 文字サイズ */    	 /* 文字位置   */
   cursor        : pointer;     /* カーソル   */
   padding       : 8px 24px;   /* 余白       */
-  background    : rgba(6, 6, 167, 0.8);     /* 背景色     */
+  /* background    : rgba(6, 6, 167, 0.8);     背景色 */
+  background-color: transparent;
   color         : #ffffff;     /* 文字色     */
   line-height   : 1em;         /* 1行の高さ  */
-  transition    : .3s;         /* なめらか変化 */
+  transition    : 1s;         /* なめらか変化 */
   box-shadow    : 4px 4px 18px #666666;  /* 影の設定 */
-  border        : 2px solid rgba(0, 0, 127, 0.80);    /* 枠の指定 */
+  /* border        : 2px solid rgba(0, 0, 127, 0.80);    枠の指定 */
+  border: 1px solid #fff;
+  border-radius: 10px;
 }
 .diag_btn:hover {
   box-shadow    : none;        /* カーソル時の影消去 */
-  color         : rgba(0, 0, 127, 0.80);     /* 背景色     */
+  color         : #fff;     /* 背景色     */
   background    : #b0afd2;     /* 文字色     */
 	border: none;
 	box-shadow    : 4px 4px 18px #666666
@@ -365,6 +365,10 @@ font-size: 2rem;
 
 
 /* result_page */
+.result-stmt-container{
+	width: 80%;
+	margin: auto;
+}
 
 /* .result_container */
 .result_container {
@@ -379,8 +383,9 @@ font-size: 2rem;
 	/* margin: 40px auto; */
 	/* outline: 2px solid skyblue; */
 	font-size: 1.5em;
-	height: 60vh;
 	padding-top: 20px;
+	height: auto;
+	padding: 20px auto 0 10%;
 
 }
 .result_section_little{
@@ -398,7 +403,8 @@ font-size: 2rem;
 } */
 
 .result_title {
-height: 80vh;
+/* height: 80vh; */
+padding: 100px 0 ;
 }
 
 .result_wrapper {
@@ -458,14 +464,14 @@ margin-bottom: 16px;
 	background: #6174A2;
 	width: 90%;
 	margin-bottom: 10px;
-	margin-left: auto;
+	margin-left: 0;
 	margin-right: auto;
 }
 .other_buttons {
 	display: flex;
 	gap: 10px;
 	width: 90%;
-	margin: 0 auto;
+	margin: 0 auto 0 0;
 }
 .other_buttons a{
 	width: 50%;
@@ -490,26 +496,14 @@ margin-bottom: 16px;
 /* end of share_buttons */
 
 /* case_desc */
-.case_desc{
-	display: flex;
-	/* width: 80%;
-	margin: 40px auto; */
-	/* margin: 40px 0; */
-}
+
 .case_desc p{
 	text-align: left;
-}
-.case_desc_title{
-	width: 40%;
 }
 .case_desc_title p{
 	/* font-size: 2.0rem; */
 	letter-spacing: .2rem;
 	/* line-height: 2.4rem; */
-}
-.case_desc_detail{
-	width: 60%;
-	margin-left: 24px;
 }
 .case_desc_detail p{
 	font-size: 1.7rem;
@@ -661,7 +655,7 @@ color: #FFB8AA;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
-	margin: 0 auto;
+	margin: 0 auto ;
 	width: 40%;
 	display: flex;
 	align-items: center;
