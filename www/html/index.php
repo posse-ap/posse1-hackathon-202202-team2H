@@ -64,6 +64,10 @@ $questions = getAllQuestions($db);
 
     </div>
     <form action="" method="POST">
+        <?php if(!empty($error['answers'])): ?>
+            <p class="container error">*すべての質問に回答してください
+            </p>
+        <?php endif ?>
         <input type="hidden" name="token" value="<?= htmlspecialchars($_SESSION['token'], ENT_QUOTES) ?>">
         <?php foreach ($questions as $question) : ?>
             <div class="question container">
