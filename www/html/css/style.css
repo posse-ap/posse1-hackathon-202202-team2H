@@ -425,6 +425,9 @@ font-size: 2rem;
     flex-direction: column;
     vertical-align: middle;
 } */
+header p{
+	margin-left: 20px;
+}
 
 .result_title {
 /* height: 80vh; */
