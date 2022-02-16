@@ -131,7 +131,7 @@ if(!isset($_SSSION['nickname'])) {
             </div>
         </a>
         <div class="other_buttons">
-            <a href="http://line.me/R/msg/text/?意識高い度診断%https://deep-blog.jp/engineer/share-button-url-list/" target="_blank">
+        <a href="http://line.me/R/msg/text/?<?= $_SESSION['nickname'] ?>さんの意識高い度:<?= $_SESSION['result'] ?>https://deep-blog.jp/engineer/share-button-url-list/" target="_blank">
                 <div class="line">
                     <img src="img/line.jpg" alt="ラインのロゴ">
                 </div>
