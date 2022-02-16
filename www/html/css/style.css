@@ -402,7 +402,6 @@ font-size: 2rem;
 }
 
 .count_up{
-	display: block;
     animation: 3s fadeIn;
 }
 @keyframes fadeIn{
