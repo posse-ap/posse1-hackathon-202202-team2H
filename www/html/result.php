@@ -39,27 +39,6 @@ if (!isset($_SESSION['result'])) {
             </div>
             <!-- end of share_buttons -->
 
-            <!-- case_desc -->
-            <section class="container result_section box fadeInr case_desc">
-                <div class="case_desc_title">
-                    <p>信頼できる人脈で
-                        <br>新たな自分へと...
-                    </p>
-                </div>
-                <div class='case_desc_detail'>
-                    <p>
-                        人脈とは、困ったときに助けを求めたり求められたり、利害関係が成り立つ人と人とのつながりのことを指します。
-                    </p>
-                    <p>
-                        キャリア形成において、人脈は必須と言っても過言ではありません。
-                    </p>
-                    <p>
-                        信頼関係のある強固な人脈が
-                        <br>自分の可能性を引き出すチャンスです。
-                        <!-- 一人では得られない情報を得られたり、アドバイスをもらえたり、ビジネスシーンでもプライベートでも、困ったときや助けてほしいときにプラスの要素をもたらしてくれる存在です。 -->
-                    </p>
-                </div>
-
         <!-- case_desc -->
         <section class="container case_desc result_section box fadeIn">
             <div class="case_desc_title">
