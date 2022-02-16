@@ -60,6 +60,29 @@ if (!isset($_SESSION['result'])) {
                     </p>
                 </div>
 
+<<<<<<< HEAD
+=======
+        <!-- case_desc -->
+        <section class="container case_desc result_section box fadeIn">
+            <div class="case_desc_title">
+                <p>信頼できる人脈で
+                    <br>新たな自分へと...
+                </p>
+            </div>
+            <div class='case_desc_detail disappear'>
+                <p>
+                    人脈とは、困ったときに助けを求めたり求められたり、利害関係が成り立つ人と人とのつながりのことを指します。
+                </p>
+                <p>
+                    キャリア形成において、人脈は必須と言っても過言ではありません。
+                </p>
+                <!-- <p>
+                    信頼関係のある強固な人脈が
+                    <br>自分の可能性を引き出すチャンスです。
+                    <!-- 一人では得られない情報を得られたり、アドバイスをもらえたり、ビジネスシーンでもプライベートでも、困ったときや助けてほしいときにプラスの要素をもたらしてくれる存在です。 -->
+                <!-- </p> --> 
+            </div>
+>>>>>>> 34f80dcab995ec91007fd5b2277e063bbf7e035c
 
             </section>
         </div>
@@ -186,12 +209,20 @@ if (!isset($_SESSION['result'])) {
     <!-- end of posse_desc -->
 
     <!-- official -->
-    <section class="official">
+    <section class="official_sec">
         <!-- <p>覗いてみる</p> -->
+<<<<<<< HEAD
         <div class="posse_btn">
             <a href="https://posse-ap.com/">
                 公式ページ
             </a>
+=======
+        <div class="diag_btn w-50 mx-auto">
+        <a href="https://posse-ap.com/">
+            公式ページ
+            <i class="bi bi-caret-right "></i>
+        </a>
+>>>>>>> 34f80dcab995ec91007fd5b2277e063bbf7e035c
         </div>
 
         <!-- <button>
