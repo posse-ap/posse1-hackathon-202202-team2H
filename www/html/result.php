@@ -85,7 +85,7 @@ include dirname(__FILE__) . '/header.php';
 
     <!-- case_desc -->
     <section class="container case_desc result_section box fadeIn">
-        <div class="case_desc_title">
+        <div class="case_desc_title letter_size_big">
             <p>信頼できる人脈で
                 <br>新たな自分へと...
             </p>
@@ -128,7 +128,7 @@ include dirname(__FILE__) . '/header.php';
         <!-- <p>覗いてみる</p> -->
         <div class="posse_btn">
             <a href="https://posse-ap.com/">
-                click here!
+                Read more
             </a>
         </div>
 

@@ -33,6 +33,13 @@ li {
 .container {
 	max-width: 1100px;
 }
+.letter_size_big{
+    font-size: 2.7rem;
+    line-height: 3.0rem;
+}
+.letter_size_middle{
+    font-size: 1.5rem;
+}
 
 /* end od common */
 
@@ -160,16 +167,16 @@ border-radius: 10px;
 text-align: left;
 }
 .diag_deac_title p{
-	font-size: 1.6rem;
-	letter-spacing: .2rem;
-	line-height: 2.4rem;
+	font-size: 2.7rem;
+	letter-spacing: 0.2rem;
+	line-height: 3.0rem;
 }
 .diag_deac_detail{
 	/* outline: var(--main-outline); */
 	text-align: left;
 }
 .diag_deac_detail p{
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	/* transform: scale(0.8); */
 /* transform-origin:0 0; */
 line-height: 2.2rem;
@@ -208,7 +215,7 @@ letter-spacing: .2rem;
 }
 
 .question_stmt p {
-	/* font-size: 1.2rem; */
+	font-size: 2.0rem;
 	text-align: left;
 
 }
@@ -379,9 +386,10 @@ font-size: 2rem;
 .result_section_little{
 	margin: 12px auto;
 	width: 80%;
-	font-size: 1.5rem;
+	font-size: 2.0rem;
 }
 
+.
 /* result_stmt */
 /* .result_stmt {
 	text-align: center;
@@ -495,16 +503,16 @@ margin-bottom: 16px;
 	width: 40%;
 }
 .case_desc_title p{
-	font-size: 1.8rem;
+	/* font-size: 2.0rem; */
 	letter-spacing: .2rem;
-	line-height: 2.4rem;
+	/* line-height: 2.4rem; */
 }
 .case_desc_detail{
 	width: 60%;
 	margin-left: 24px;
 }
 .case_desc_detail p{
-	font-size: .8rem;
+	font-size: 1.7rem;
 	transform: scale(0.8);
 	transform-origin:0 0;
 line-height: 2.2rem;
@@ -563,13 +571,13 @@ letter-spacing: .2rem;
 	width: 60%;
 }
 .invitation p{
-	font-size: 1.8rem;
+	font-size: 2.7rem;
 margin-bottom: 24px;
 line-height: 3.2rem;
 color: #FFB8AA;
 }
 .invitation_detail p{
-	font-size: .8rem;
+	font-size: 1.8rem;
 	line-height: 2rem;
 	transform: scale(0.8);
 	transform-origin:0 0;
