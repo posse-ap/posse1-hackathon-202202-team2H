@@ -7,7 +7,7 @@ if (!isset($_SESSION['result'])) {
     header('Location: index.php');
 }
 if(!isset($_SSSION['nickname'])) {
-    $_SSSION['nickname'] = 'ゲスト';
+    $_SESSION['nickname'] = 'ゲスト';
 }
 ?>
 
