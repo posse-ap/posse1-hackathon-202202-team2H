@@ -7,7 +7,61 @@ include dirname(__FILE__) . '/header.php';
     <!-- modal  -->
     <div class="my_mask my_hidden" id="mask"></div>
     <section class="my_modal my_hidden" id="modal">
-        <h1>シェアして人脈を広げませんか</h1>
+
+    
+    <!-- share_buttons -->
+    <div class="share_buttons result_section container">
+
+        <div class="share_sentence">
+            <p>シェアして人脈を広げよう。</p>
+        </div>
+        <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=<?= $_SESSION['nickname'] ?>さんの意識高い度:<?= $_SESSION['result'] ?>&related=@posse_program" target="_blank" data-text="バズブログです！よろしく" data-show-count="false">
+            <div class="twitter">
+                <img src="img/twitter.jpg" alt="ツイッターのロゴ">
+            </div>
+        </a>
+        <div class="other_buttons">
+            <a href="http://line.me/R/msg/text/?意識高い度診断: <?= $_SESSION['result'] ?>%https://deep-blog.jp/engineer/share-button-url-list/" target="_blank">
+                <div class="line">
+                    <img src="img/line.jpg" alt="ラインのロゴ">
+                </div>
+            </a>
+            <a href="https://www.facebook.com/share.php?u=https://deep-blog.jp/engineer/share-button-url-list/" target="_blank">
+                <div class="facebook">
+                    <img src="img/facebook.jpg" alt="facebookのロゴ">
+                </div>
+            </a>
+        </div>
+        <!-- end of share_buttons -->
+        
+        <!-- case_desc -->
+        <section class="container case_desc result_section box fadeIn">
+            <div class="case_desc_title">
+                <p>信頼できる人脈で
+                    <br>新たな自分へと...
+                </p>
+            </div>
+            <div class='case_desc_detail'>
+                <p>
+                    人脈とは、困ったときに助けを求めたり求められたり、利害関係が成り立つ人と人とのつながりのことを指します。
+                </p>
+                <p>
+                    キャリア形成において、人脈は必須と言っても過言ではありません。
+                </p>
+                <p>
+                    信頼関係のある強固な人脈が
+                    <br>自分の可能性を引き出すチャンスです。
+                    <!-- 一人では得られない情報を得られたり、アドバイスをもらえたり、ビジネスシーンでもプライベートでも、困ったときや助けてほしいときにプラスの要素をもたらしてくれる存在です。 -->
+                </p>
+            </div>
+            
+        </section>
+    </div>
+    <!-- end of case_desc -->
+
+
+
+        <!-- <h1>シェアして人脈を広げませんか</h1>
         <div>
             人脈とは、困ったときに助けを求めたり求められたり、利害関係が成り立つ人と人とのつながりのことを指します。
         </div>
@@ -35,7 +89,7 @@ include dirname(__FILE__) . '/header.php';
                     </div>
                 </a>
             </div>
-        </div>
+        </div> -->
     </section>
     <!-- end of modal  -->
 
@@ -57,55 +111,6 @@ include dirname(__FILE__) . '/header.php';
     </div>
     <!-- end of result_desc -->
 
-    <!-- share_buttons -->
-    <div class="share_buttons result_section container">
-
-        <div class="share_sentence">
-            <p>シェアして人脈を広げよう！</p>
-        </div>
-        <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=<?= $_SESSION['nickname'] ?>さんの意識高い度:<?= $_SESSION['result'] ?>&related=@posse_program" target="_blank" data-text="バズブログです！よろしく" data-show-count="false">
-            <div class="twitter">
-                <img src="img/twitter.jpg" alt="ツイッターのロゴ">
-            </div>
-        </a>
-        <div class="other_buttons">
-            <a href="http://line.me/R/msg/text/?意識高い度診断: <?= $_SESSION['result'] ?>%https://deep-blog.jp/engineer/share-button-url-list/" target="_blank">
-                <div class="line">
-                    <img src="img/line.jpg" alt="ラインのロゴ">
-                </div>
-            </a>
-            <a href="https://www.facebook.com/share.php?u=https://deep-blog.jp/engineer/share-button-url-list/" target="_blank">
-                <div class="facebook">
-                    <img src="img/facebook.jpg" alt="facebookのロゴ">
-                </div>
-            </a>
-        </div>
-    </div>
-    <!-- end of share_buttons -->
-
-    <!-- case_desc -->
-    <section class="container case_desc result_section box fadeIn">
-        <div class="case_desc_title">
-            <p>信頼できる人脈で
-                <br>新たな自分へと...
-            </p>
-        </div>
-        <div class='case_desc_detail'>
-            <p>
-                人脈とは、困ったときに助けを求めたり求められたり、利害関係が成り立つ人と人とのつながりのことを指します。
-            </p>
-            <p>
-                キャリア形成において、人脈は必須と言っても過言ではありません。
-            </p>
-            <p>
-                信頼関係のある強固な人脈が
-                <br>自分の可能性を引き出すチャンスです！
-                <!-- 一人では得られない情報を得られたり、アドバイスをもらえたり、ビジネスシーンでもプライベートでも、困ったときや助けてほしいときにプラスの要素をもたらしてくれる存在です。 -->
-            </p>
-        </div>
-
-    </section>
-    <!-- end of case_desc -->
 
     <!-- posse_desc  -->
     <section class="posse_desc result_section container result_section_little box fadeIn">
