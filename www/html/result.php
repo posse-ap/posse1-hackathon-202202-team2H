@@ -1,6 +1,5 @@
 <?php
 session_start();
-require_once dirname(__FILE__) . '/question.php';
 include dirname(__FILE__) . '/header.php';
 ?>
 
@@ -73,13 +72,13 @@ include dirname(__FILE__) . '/header.php';
             <div class="share_sentence">
                 <p>シェアして人脈を広げませんか</p>
             </div>
-            <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=<?= $_SESSION['nickname'] ?>さんの意識高い度:<?= $_SESSION['result'] ?>&related=@posse_program" target="_blank" data-text="バズブログです！よろしく" data-show-count="false">
+            <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=さんの意識高い度:&related=@posse_program" target="_blank" data-text="バズブログです！よろしく" data-show-count="false">
                 <div class="twitter">
                     <img src="img/twitter.jpg" alt="ツイッターのロゴ">
                 </div>
             </a>
             <div class="other_buttons">
-                <a href="http://line.me/R/msg/text/?意識高い度診断: <?= $_SESSION['result'] ?>%https://deep-blog.jp/engineer/share-button-url-list/" target="_blank">
+                <a href="http://line.me/R/msg/text/?意識高い度診断: %https://deep-blog.jp/engineer/share-button-url-list/" target="_blank">
                     <div class="line">
                         <img src="img/line.jpg" alt="ラインのロゴ">
                     </div>
@@ -105,65 +104,13 @@ include dirname(__FILE__) . '/header.php';
 
             <!-- result_desc -->
             <section class="col-md-6 result_desc">
-                <p><?= getDetailMessage($_SESSION['result']) ?></p>
+                <p><?= $_SESSION['result'] ?>%だったあなたは非常に意識が低いです。そんなあなたには、私たちの愛読している本を紹介します。</p>
             </section>
         </div>
 
     </div>
     <!-- end of result_desc -->
 
-    <!-- share_buttons -->
-    <div class="share_buttons result_section container">
-
-        <div class="share_sentence">
-            <p>シェアして人脈を広げよう！</p>
-        </div>
-        <a href="http://twitter.com/share?url=https://deep-blog.jp/engineer/share-button-url-list/&text=<?= $_SESSION['nickname'] ?>さんの意識高い度:<?= $_SESSION['result'] ?>&related=@posse_program" target="_blank" data-text="バズブログです！よろしく" data-show-count="false">
-            <div class="twitter">
-                <img src="img/twitter.jpg" alt="ツイッターのロゴ">
-            </div>
-        </a>
-        <div class="other_buttons">
-            <a href="http://line.me/R/msg/text/?意識高い度診断: <?= $_SESSION['result'] ?>%https://deep-blog.jp/engineer/share-button-url-list/" target="_blank">
-                <div class="line">
-                    <img src="img/line.jpg" alt="ラインのロゴ">
-                </div>
-            </a>
-            <a href="https://www.facebook.com/share.php?u=https://deep-blog.jp/engineer/share-button-url-list/" target="_blank">
-                <div class="facebook">
-                    <img src="img/facebook.jpg" alt="facebookのロゴ">
-                </div>
-            </a>
-        </div>
-    </div>
-    <!-- end of share_buttons -->
-
-    <!-- case_desc -->
-    <section class="container case_desc result_section box fadeIn">
-        <div class="row">
-            <div class="case_desc_title col-md-5">
-                <p>信頼できる人脈で
-                    <br>新たな自分へと...
-                </p>
-            </div>
-            <div class='case_desc_detail col-md-7'>
-                <p>
-                    人脈とは、困ったときに助けを求めたり求められたり、利害関係が成り立つ人と人とのつながりのことを指します。
-                </p>
-                <p>
-                    キャリア形成において、人脈は必須と言っても過言ではありません。
-                </p>
-                <p>
-                    信頼関係のある強固な人脈が
-                    <br>自分の可能性を引き出すチャンスです！
-                    <!-- 一人では得られない情報を得られたり、アドバイスをもらえたり、ビジネスシーンでもプライベートでも、困ったときや助けてほしいときにプラスの要素をもたらしてくれる存在です。 -->
-                </p>
-            </div>
-        </div>
-
-
-    </section>
-    <!-- end of case_desc -->
 
     <!-- posse_desc  -->
     <section class="posse_desc result_section container result_section_little box fadeIn">
@@ -209,7 +156,8 @@ include dirname(__FILE__) . '/header.php';
 
 <!-- footer -->
 <footer class="footer">
-    <div class="footer_line">(c)新人ハッカソン選抜</div>
+    <div class="footer_line"></div>
+    (c)新人ハッカソン選抜
 </footer>
 <!-- end of footer -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

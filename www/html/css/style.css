@@ -116,6 +116,7 @@ footer {
 	background: url(../img/shaking-hands-gd698e3efb_1920.jpg);
 	background-size: cover;
   background-position: top;
+  background-attachment: fixed;
   /* opacity: .5; */
 	height: 80vh;
 	/* border-radius: 10px; */
