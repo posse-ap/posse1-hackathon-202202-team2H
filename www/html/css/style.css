@@ -391,7 +391,7 @@ font-size: 2rem;
 	/* outline: 2px solid skyblue; */
 	font-size: 1.5em;
 	padding-top: 20px;
-	height: auto;
+	height: 50vh;
 	padding: 20px auto 0 10%;
 
 }
@@ -479,6 +479,11 @@ padding: 100px 0 ;
 /* .share_buttons {
 	/* width: 100%; */
 /* } */
+
+.share_buttons {
+	padding-right: 0;
+	padding-left: 0;
+}
 .share_sentence p{
 font-size: 1.6rem;
 color: white;
@@ -521,6 +526,11 @@ margin-bottom: 16px;
 /* end of share_buttons */
 
 /* case_desc */
+
+.case_desc {
+	padding-right: 0;
+	padding-left: 0;
+}
 
 .case_desc p{
 	text-align: left;
@@ -734,6 +744,8 @@ color: #FFB8AA;
 	transform: translate3d(0, 0, 0);
 	opacity: 1;
 }
+
+
 
 
 /* end of official */
