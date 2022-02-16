@@ -97,17 +97,17 @@ $questions = getAllQuestions($db);
       <input type="text" placeholder="ニックネーム" id = 'name' >
       <i class="fa-solid fa-user"></i>
     </div> -->
-        <div class="name section">
-            <p>ニックネーム</p>
+        <div class="name section container">
+            <p>ニックネーム（任意）</p>
             <input type="text" placeholder="ニックネーム" id='name' name="nickname">
             <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
         </div>
         <!-- <div class="submit section">
      <input type="submit" value="診断する" class="btn btn-radius-gradient">
     </div> -->
-        <div class="submit">
+        <div class="container submit">
             <!-- <a href="" class="btn btn-radius-gradient">PUSH！</a> -->
-            <p>お疲れさまでした！</p>
+            <p>お疲れさまでした。診断を開始しましょう。</p>
             <input type="submit" value="診断する" class="diag_btn">
 
         </div>

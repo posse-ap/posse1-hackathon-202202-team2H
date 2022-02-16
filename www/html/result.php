@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once dirname(__FILE__) . '/question.php';
 include dirname(__FILE__) . '/header.php';
 ?>
 
@@ -50,7 +51,7 @@ include dirname(__FILE__) . '/header.php';
 
             <!-- result_desc -->
             <section class="col-md-6 result_desc">
-                <p><?= $_SESSION['result'] ?>%だったあなたは非常に意識が低いです。そんなあなたには、私たちの愛読している本を紹介します。</p>
+                <p><?= getDetailMessage($_SESSION['result']) ?></p>
             </section>
         </div>
 
@@ -85,24 +86,27 @@ include dirname(__FILE__) . '/header.php';
 
     <!-- case_desc -->
     <section class="container case_desc result_section box fadeIn">
-        <div class="case_desc_title">
-            <p>信頼できる人脈で
-                <br>新たな自分へと...
-            </p>
+        <div class="row">
+            <div class="case_desc_title col-md-5">
+                <p>信頼できる人脈で
+                    <br>新たな自分へと...
+                </p>
+            </div>
+            <div class='case_desc_detail col-md-7'>
+                <p>
+                    人脈とは、困ったときに助けを求めたり求められたり、利害関係が成り立つ人と人とのつながりのことを指します。
+                </p>
+                <p>
+                    キャリア形成において、人脈は必須と言っても過言ではありません。
+                </p>
+                <p>
+                    信頼関係のある強固な人脈が
+                    <br>自分の可能性を引き出すチャンスです！
+                    <!-- 一人では得られない情報を得られたり、アドバイスをもらえたり、ビジネスシーンでもプライベートでも、困ったときや助けてほしいときにプラスの要素をもたらしてくれる存在です。 -->
+                </p>
+            </div>
         </div>
-        <div class='case_desc_detail'>
-            <p>
-                人脈とは、困ったときに助けを求めたり求められたり、利害関係が成り立つ人と人とのつながりのことを指します。
-            </p>
-            <p>
-                キャリア形成において、人脈は必須と言っても過言ではありません。
-            </p>
-            <p>
-                信頼関係のある強固な人脈が
-                <br>自分の可能性を引き出すチャンスです！
-                <!-- 一人では得られない情報を得られたり、アドバイスをもらえたり、ビジネスシーンでもプライベートでも、困ったときや助けてほしいときにプラスの要素をもたらしてくれる存在です。 -->
-            </p>
-        </div>
+
 
     </section>
     <!-- end of case_desc -->
