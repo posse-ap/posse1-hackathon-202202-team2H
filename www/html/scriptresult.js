@@ -5,7 +5,7 @@ $(function () {
         modal.classList.remove('my_hidden');
         mask.classList.remove('my_hidden');
 
-    }, 3000);
+    }, 5000);
 
 
 
