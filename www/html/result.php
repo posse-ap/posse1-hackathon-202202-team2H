@@ -178,11 +178,12 @@ include dirname(__FILE__) . '/header.php';
     <!-- end of posse_desc -->
 
     <!-- official -->
-    <section class="official">
+    <section class="official_sec">
         <!-- <p>覗いてみる</p> -->
-        <div class="posse_btn">
+        <div class="diag_btn w-50 mx-auto">
         <a href="https://posse-ap.com/">
             公式ページ
+            <i class="bi bi-caret-right "></i>
         </a>
         </div>
 
