@@ -32,7 +32,7 @@ $questions = getAllQuestions($db);
 <!-- top -->
 <div class="top_container">
     <div class="first_view">
-        <h1>できる大学生ならわかって当然！
+        <h1>できる大学生なら分かってて当然！
             <br>意識高い系診断
         </h1>
     </div>
